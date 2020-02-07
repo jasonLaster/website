@@ -1,0 +1,85 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/styles/styles.css"></link>
+  <link rel="stylesheet" type="text/css" href="/styles/nav.css"></link>
+  <link rel="stylesheet" type="text/css" href="/styles/features.css"></link>
+</head>
+
+<body class="features">
+  <div class="header">
+    <div class="nav ">
+      <div class="container" >
+        <img src="/assets/replay-logo.png"/>
+        <div class="links">
+          <a href="/features/reproducing-bugs.html" class="active link">Features</a>
+          <a href="/about.html" class="link">About</a>
+          <a href="/contact.html" class="link">Contact </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-description">
+          <h1>Features</h1>
+          <div class="secondary">
+              <h2>The goal of Web Replay is to make debugging and improving web sites fast, fun, and easy.  This page walks through some of the exciting new workflows that are now possible. </h2>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <content>
+    <div class="sidebar">
+      <h3>Reproducing Bugs</h3>
+      <ul>
+        <li><a href="#">Bugs from QA</a></li>
+        <li><a href="#">Bugs from users</a></li>
+        <li><a href="#">CI test failures</a></li>
+        <li><a href="#">Intermittent failutes</a></li>
+      </ul>
+      <h3>Analyzing Bugs</h3>
+      <ul>
+        <li><a href="#">Inspecting the DOM + CSS</a></li>
+        <li><a href="#">Studying console errors</a></li>
+        <li><a href="#">Using console.log()</a></li>
+        <li><a href="#">Using breakpoints</a></li>
+        <li><a href="#">Stepping through JS code</a></li>
+      </ul>
+    </div>
+    <div class="features">
+
+      <h3>Analyzing Bugs</h3>
+      <p>Once developers have a Web Replay recording capturing a bug, they must analyze the page’s behavior to determine the bug’s underlying cause. Web Replay provides a suite of new features to help with this process. These features are based on the browser’s standard developer tools (Web Replay is a fork of Firefox), to make them easy to use.</p>
+      <p>It isn’t necessary to create and submit a recording in order to take use these new features. Developers can start recording a page, open the developer tools, and immediately use these features to analyze the behavior that has happened so far.</p>
+      <p>Below, we describe these new analysis features by comparing them to debugging workflows with standard tools.</p>
+
+      <h4>Inspecting the DOM/CSS</h4>
+      <p>The standard developer tools included in web browsers are great for inspecting the DOM and CSS state on a page, but they are only able to inspect the current state of the page. This makes it hard to understand how the DOM changes over time, and especially how the DOM/CSS respond to user interactions like mouse hover events.</p>
+      <p>Web Replay’s DOM inspector offers the same functionality as the standard DOM inspector, but allows the DOM to be inspected at any point in the recording. This includes every rendered frame, and every executed JS statement.</p>
+
+      <h4> Studying console errors</h4>
+      <p>Bugs on a page are often associated with errors or other problems logged to the console. Looking at the console output in the developer tools will show these errors, but this may not be enough to figure out the error’s underlying cause.</p>
+      <p>When using Web Replay, the console output will be the same as with standard developer tools. Every error and logged message can be clicked on, however, updating the page to the point when that error or log occurred. All DOM, CSS, and JS state at that point can be inspected, and the stepping buttons and other navigation tools can be used to see the execution state at nearby JS statements and understand the page’s behavior.</p>
+      <p>The video below shows the use of console message seeking to figure out why an error occurred.</p>
+      <p><iframe src="https://www.youtube.com/embed/bThQB5OsQfk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+
+      <h4>Using console.log()</h4>
+      <p>Logging messages to the console is a common practice when investigating bugs. New calls to console.log() are added to the page, then the developer reproduces the bug, studies the output of those calls to get a better understanding of what is happening, then probably has to add more console.log() calls and repeat the process several times. This is slow and cumbersome, especially with bugs that reproduce intermittently, where the process will either take much longer or fail entirely if the bug stops reproducing (a Heisenbug).</p>
+      <p>We feel that logging messages to the console is a highly effective way of figuring out tricky bugs, and have added a feature to Web Replay to make this workflow much more efficient. Standard developer tools let users set logpoints at JS statements, which are like breakpoints but log a message to the console instead of pausing execution. Normally, logpoints only apply when the statement executes in the future, and the above cycle of repeatedly reproducing the bug is still required. When using Web Replay, logpoints apply throughout the recording: a message is added to the console for every time the logged statement has ever executed. Developers can add or remove logpoints as needed to track down the underlying cause, without having to make additional recordings.</p>
+      <p>The video below shows how logpoints can be used with Web Replay to figure out an intermittent bug.</p>
+      <p><iframe src="https://www.youtube.com/embed/0fCjDThbC_s" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+
+
+      <h4>Using breakpoints</h4>
+      <p>Setting breakpoints and pausing at them is a common way of inspecting DOM or JS state at specific points in a page&#8217;s execution.  When tracking down a bug with standard developer tools, a developer will typically set some breakpoints and run forward between them as they study how the program&#8217;s state changes.  If they move past the point they were interested in then they need to reload the page and start over, and if the bug is intermittent then they won&#8217;t know whether the bug will even occur later on.</p>
+      <p>Web Replay improves on the use of breakpoints by allowing breakpoint hits to be searched for in either direction in the recording.  Developers can run forward to the next time a statement is hit, or they can rewind to the previous time.  This eliminates the difficulties above.</p>
+      <p>However, we feel that Web Replay&#8217;s logpoints provide an even larger improvement over breakpoint based workflows.  Messages logged via logpoints can be seeked to in the same way as for other console messages, letting developers inspect state there as if they had stopped using a breakpoint.  Logpoint messages are all shown in the console with any associated evaluated text, letting developers seek to the exact point they want to.</p>
+
+      <h4>Stepping through JS code</h4>
+      <p>Stepping buttons are used in standard development tools for fine scale navigation within a JS frame.  Stepping is subject to the same issues as navigation using breakpoints: developers might step past the point of interest and need to start over, and they won&#8217;t know if an intermittent bug will occur later.  They can also be annoying to use if there is a lot of JS execution in a frame and many steps are taken.</p>
+      <p>Web Replay offers several improved workflows for understanding how code executes within a frame.  First, in addition to the normal forward stepping buttons there is now a reverse step button, which steps back to the previous statement and makes it easy to recover if the point of interest was stepped past.  Second, a timeline for the current frame is shown which developers can use to quickly scan through all the points executed in the frame and reach the point they want to.</p>
+      <p>Video coming soon!</p>
+    </div>
+  </content>
+  <footer></footer>
+</body>

@@ -1,0 +1,46 @@
+.nav {
+  /* position: relative; */
+  position: sticky;
+
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav .container {
+  display: flex;
+  width: 1200px;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.nav img {
+  height: 30px;
+  display: block;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.nav .links {
+  display: flex;
+  flex-direction: row;
+  vertical-align: baseline;
+  line-height: 50px;
+}
+
+.nav .link {
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.nav .link.active {
+  color: white;
+}
+
+.nav .link:hover {
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
