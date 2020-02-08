@@ -76,8 +76,9 @@ body {
   padding-left: 100px;
 }
 
-.hero img {
-  margin-top: 40px;
+.hero iframe {
+    margin-top: 40px;
+    align-self: center;
 }
 
 .hero .container {
