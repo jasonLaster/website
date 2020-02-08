@@ -22,7 +22,7 @@
       <div class="hero-description">
           <h1>Features</h1>
           <div class="secondary">
-              <h2>The goal of Web Replay is to make debugging and improving web sites fast, fun, and easy.  This page walks through some of the exciting new workflows that are now possible. </h2>
+              <h2>Web Replay's goal is to make debugging and improving web sites fast, fun, and easy.  This page walks through some of the exciting new workflows that are now possible. </h2>
           </div>
       </div>
     </div>
@@ -31,14 +31,14 @@
 
   <content>
     <div class="sidebar">
-      <h3>Reproducing Bugs</h3>
+      <h3>Perfect Bug Reports</h3>
       <ul>
         <li><a href="#">Bugs from QA</a></li>
         <li><a href="#">Bugs from users</a></li>
         <li><a href="#">CI test failures</a></li>
-        <li><a href="#">Intermittent failutes</a></li>
+        <li><a href="#">Intermittent failures</a></li>
       </ul>
-      <h3>Analyzing Bugs</h3>
+      <h3>Time Travel Debugging</h3>
       <ul>
         <li><a href="#">Inspecting the DOM + CSS</a></li>
         <li><a href="#">Studying console errors</a></li>
@@ -48,19 +48,19 @@
       </ul>
     </div>
     <div class="features">
-      <h3>Reproducing Bugs</h3>
+      <h3>Perfect Bug Reports</h3>
       <p>In order for a developer to fix a bug they have to identify its underlying cause. The gold standard for a bug report is reproducibility: if the developer can reproduce it then they can determine that cause and fix it.</p>
-      <p>Recording a bug with Web Replay gives developers an exact reproduction of that bug. Developers analyzing the recording with our cloud service will see the same DOM, CSS, JS, and other behavior that occurred while recording, and which they would see when debugging a tab on their own machine.</p>
+      <p>Recording a bug with Web Replay gives developers an exact reproduction of that bug. Developers analyzing a saved recording will see the same DOM, CSS, JS, and other behavior that originally occurred, and which they would see when debugging a tab on their own machine.</p>
       <p>Bug reports can come from a variety of sources. All of these will be improved by using Web Replay recordings, as outlined below.</p>
-      <img src="/assets/recording.png"/>
+      <iframe src="https://www.youtube.com/embed/bThQB5OsQfk?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
       <h4>Bugs from QA</h4>
-      <p>Good bug reports are hard to produce, even for professional QA staff. Many bugs only reproduce in certain situations, and writing down enough instructions to reproduce them is tricky or impossible. QA staff can include console logs, screenshots, or videos showing the bug, but these might not be enough to determine the underlying cause.</p>
-      <p>Creating a Web Replay recording removes all this guesswork. We have designed Web Replay to make it easy for QA staff to create recordings and send them to developers, as shown in the video below. No account or payment is necessary to create recordings.</p>
+      <p>Good bug reports are hard to produce, even for professional QA staff. Many bugs only reproduce in certain situations, and writing down enough instructions to reproduce them is tricky or impossible. QA staff can include console logs, screenshots, or videos showing the bug, but these usually aren't enough to determine the underlying cause.</p>
+      <p>Creating a Web Replay recording removes all this guesswork. We have designed Web Replay to make it easy for QA staff to create recordings and send them to developers. No account or payment is necessary to create recordings.</p>
       <h4>Bugs from users</h4>
       <p>Bug reports from users are even harder to handle than reports from QA. The user’s profile can have quirks which make reproduction difficult, and users generally lack the technical skills to write down instructions for reproducing bugs.</p>
       <p>Web Replay is designed to be accessible to users in the same way it is for QA staff. Users simply need to download the Web Replay browser, record the bug they are seeing, and send a link to that recording to the developers.</p>
       <h4>Continuous Integration test failures</h4>
-      <p>Test failures in CI can usually be reproduced by developers, but several steps might be required to see the failure on their own machine. Web Replay can be launched from the command line and used to automatically submit recordings (well, not quite yet, but soon, see this issue). Links to these recordings can be sent to developers so that they do not need to reproduce the problem locally.</p>
+      <p>Test failures in CI can usually be reproduced by developers, but several steps might be required to see the failure on their own machine. Web Replay can be launched from the command line and automatically submit recordings (well, not quite yet, but <a href="https://github.com/WebReplay/webreplay/issues/33">soon</a>). Links to these recordings can be sent to developers so that they do not need to reproduce the problem locally.</p>
       <h4>Intermittent bugs</h4>
       <p>The benefits of using Web Replay recordings are especially apparent for bugs that only occur intermittently. Reliable bug reports can’t be created for these problems and they can be extremely difficult for developers to figure out, often lingering for months or years. Any intermittent bug captured in a recording can be thoroughly analyzed and have its underlying cause determined.</p>
 
