@@ -114,6 +114,14 @@ ul li {
   font-size: 18px;
 }
 
+h3 a {
+  text-decoration: none;
+}
+
+h3 a:hover {
+  text-decoration: underline;
+}
+
 ul li a {
   text-decoration: none;
 }
@@ -182,7 +190,7 @@ content .features p {
   width: 700px;
 }
 
-.sidebar h3 {
+.sidebar h3 a {
   color: #626262;
   font-size: 20px;
   line-height: 30px;

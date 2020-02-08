@@ -31,20 +31,20 @@
 
   <content>
     <div class="sidebar">
-      <h3>Perfect Bug Reports</h3>
+      <h3><a href="perfect-bug-reports.html#">Perfect Bug Reports</a></h3>
       <ul>
-        <li><a href="#">Bugs from QA</a></li>
-        <li><a href="#">Bugs from users</a></li>
-        <li><a href="#">CI test failures</a></li>
-        <li><a href="#">Intermittent failures</a></li>
+        <li><a href="perfect-bug-reports.html#bugs-from-QA">Bugs from QA</a></li>
+        <li><a href="perfect-bug-reports.html#bugs-from-users">Bugs from users</a></li>
+        <li><a href="perfect-bug-reports.html#ci-failures">CI test failures</a></li>
+        <li><a href="perfect-bug-reports.html#intermittent-failures">Intermittent failures</a></li>
       </ul>
-      <h3>Time Travel Debugging</h3>
+      <h3><a href="time-travel-debugging.html">Time Travel Debugging</a></h3>
       <ul>
-        <li><a href="#">Inspecting the DOM + CSS</a></li>
-        <li><a href="#">Studying console errors</a></li>
-        <li><a href="#">Using console.log()</a></li>
-        <li><a href="#">Using breakpoints</a></li>
-        <li><a href="#">Stepping through JS code</a></li>
+        <li><a href="time-travel-debugging.html#inspecting-dom">Inspecting the DOM + CSS</a></li>
+        <li><a href="time-travel-debugging.html#console-errors">Studying console errors</a></li>
+        <li><a href="time-travel-debugging.html#console-log">Using console.log()</a></li>
+        <li><a href="time-travel-debugging.html#breakpoints">Using breakpoints</a></li>
+        <li><a href="time-travel-debugging.html#stepping">Stepping through JS code</a></li>
       </ul>
     </div>
     <div class="features">
@@ -53,18 +53,18 @@
       <p>Recording a bug with Web Replay gives developers an exact reproduction of that bug. Developers analyzing a saved recording will see the same DOM, CSS, JS, and other behavior that originally occurred, and which they would see when debugging a tab on their own machine.</p>
       <p>Bug reports can come from a variety of sources. All of these will be improved by using Web Replay recordings, as outlined below.</p>
       <iframe src="https://www.youtube.com/embed/bThQB5OsQfk?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
-      <h4>Bugs from QA</h4>
+      <h4 id="bugs-from-QA">Bugs from QA</h4>
       <p>Good bug reports are hard to produce, even for professional QA staff. Many bugs only reproduce in certain situations, and writing down enough instructions to reproduce them is tricky or impossible. QA staff can include console logs, screenshots, or videos showing the bug, but these usually aren't enough to determine the underlying cause.</p>
       <p>Creating a Web Replay recording removes all this guesswork. We have designed Web Replay to make it easy for QA staff to create recordings and send them to developers. No account or payment is necessary to create recordings.</p>
-      <h4>Bugs from users</h4>
+      <h4 id="bugs-from-users">Bugs from users</h4>
       <p>Bug reports from users are even harder to handle than reports from QA. The user’s profile can have quirks which make reproduction difficult, and users generally lack the technical skills to write down instructions for reproducing bugs.</p>
       <p>Web Replay is designed to be accessible to users in the same way it is for QA staff. Users simply need to download the Web Replay browser, record the bug they are seeing, and send a link to that recording to the developers.</p>
-      <h4>Continuous Integration test failures</h4>
+      <h4 id="ci-failures">Continuous Integration test failures</h4>
       <p>Test failures in CI can usually be reproduced by developers, but several steps might be required to see the failure on their own machine. Web Replay can be launched from the command line and automatically submit recordings (well, not quite yet, but <a href="https://github.com/WebReplay/webreplay/issues/33">soon</a>). Links to these recordings can be sent to developers so that they do not need to reproduce the problem locally.</p>
-      <h4>Intermittent bugs</h4>
+      <h4 id="intermittent-failures">Intermittent bugs</h4>
       <p>The benefits of using Web Replay recordings are especially apparent for bugs that only occur intermittently. Reliable bug reports can’t be created for these problems and they can be extremely difficult for developers to figure out, often lingering for months or years. Any intermittent bug captured in a recording can be thoroughly analyzed and have its underlying cause determined.</p>
 
-      <a class="link next" href="/features/time-travel-debugging.html">View Analyzing Bugs →</a>
+      <a class="link next" href="/features/time-travel-debugging.html">View Time Travel Debugging →</a>
     </div>
   </content>
   <footer></footer>
