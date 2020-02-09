@@ -60,30 +60,30 @@ body {
 }
 
 .hero-description h1 {
-  width: 350px;
+  width: 310px;
   text-align: center;
 }
 
 .hero-description h2 {
   font-size: 18px;
   line-height: 30px;
-  width: 600px;
+  max-width: 600px;
 }
 
 .hero-description .secondary {
   flex-grow: 1;
   font-size: 18px;
-  padding-left: 100px;
+  padding-left: 60px;
 }
 
 .hero iframe {
-    margin-top: 40px;
-    align-self: center;
+  margin-top: 40px;
+  align-self: center;
 }
 
 .hero .container {
   display: flex;
-  width: 600px;
+  max-width: 600px;
   align-self: center;
   padding-top: 50px;
   flex-direction: column;
@@ -95,12 +95,10 @@ footer {
   height: 80px;
 }
 
-a {
-  color: #37a8ff;
-}
-
+a,
 a:visited {
   color: #37a8ff;
+  text-decoration: none;
 }
 
 ul {
@@ -165,8 +163,8 @@ content .sidebar {
 
 content .features {
   flex-grow: 1;
-  padding-top: 60px;
-  padding-left: 100px;
+  padding: 60px 40px 0 60px;
+  position: relative;
 }
 
 content .contact {
@@ -188,7 +186,7 @@ content .features p {
   line-height: 30px;
   margin-bottom: 25px;
   color: #636363;
-  width: 700px;
+  max-width: 700px;
 }
 
 .sidebar h3 a {
@@ -196,4 +194,32 @@ content .features p {
   font-size: 20px;
   line-height: 30px;
   margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+  .nav a.link.active {
+    font-weight: bold;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .hero-description {
+    display: none;
+  }
+
+  content .features h3 {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+  content .features h4 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  content .features p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
 }
