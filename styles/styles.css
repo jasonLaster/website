@@ -46,11 +46,11 @@ body {
   flex-direction: row;
   /* display: flex; */
   align-self: center;
-  width: 1200px;
+  width: 100%;
 
   color: white;
   font-weight: normal;
-  padding: 50px 0 30px 15px;
+  padding: 50px 0 30px 0px;
 }
 
 .hero h1,

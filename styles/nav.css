@@ -11,7 +11,7 @@
 
 .nav .container {
   display: flex;
-  width: 1200px;
+  width: 100%;
   align-self: center;
   justify-content: space-between;
 }
@@ -28,6 +28,7 @@
   flex-direction: row;
   vertical-align: baseline;
   line-height: 50px;
+  padding-right: 20px;
 }
 
 .nav .link {
