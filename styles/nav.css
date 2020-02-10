@@ -49,6 +49,10 @@
   cursor: pointer;
 }
 
+.next {
+  font-size: 20px;
+}
+
 @media (max-width: 900px) {
   .nav .wrapper {
     flex-direction: column;
