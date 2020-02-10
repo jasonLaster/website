@@ -1,7 +1,19 @@
+.contact content {
+  width: 100%;
+  justify-content: center;
+}
+
+content .contact {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
 .mc-field-group label {
   display: block;
   margin-bottom: 3px;
-  min-width: 605px;
   color: #333;
   font-size: 18px;
 }
