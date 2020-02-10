@@ -1,0 +1,15 @@
+.mc-field-group label {
+  display: block;
+  margin-bottom: 3px;
+  min-width: 605px;
+  color: #333;
+  font-size: 18px;
+}
+
+#mc_embed_signup {
+  margin-top: 40px;
+  font-size: 16px;
+  background: #fdfdfd;
+  border-radius: 6px;
+  border: 1px solid #efefef;
+}
