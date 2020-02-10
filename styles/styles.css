@@ -56,7 +56,6 @@ body {
 
 .hero h1,
 .hero h2 {
-  font-weight: 200;
   display: block;
 }
 
@@ -257,5 +256,6 @@ content .features p {
 
   .hero-description h2 {
     max-width: 600px;
+    font-weight: 200;
   }
 }
