@@ -248,6 +248,11 @@ content .features p {
 @media (min-width: 900px) {
   .hero-description {
     width: 100%;
+    max-width: 1200px;
+  }
+
+  .hero-description h1 {
+    width: 350px;
   }
 
   .hero-description h2 {
