@@ -1,9 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", "helvetica";
+  display: flex;
+  flex-direction: column;
+}
+
+body.contact {
+  background-color: white;
+}
+
 .contact content {
   width: 100%;
   justify-content: center;
 }
 
 content .contact {
+  margin-top: 100px;
   width: 100%;
   max-width: 600px;
   display: flex;
