@@ -1,0 +1,62 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158124230-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158124230-1');
+</script>
+
+<title>
+Web Replay: Graphics Warning
+</title>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/styles/styles.css"></link>
+  <link rel="stylesheet" type="text/css" href="/styles/nav.css"></link>
+  <link rel="stylesheet" type="text/css" href="/styles/hero.css"></link>
+  <link rel="stylesheet" type="text/css" href="/styles/features.css"></link>
+</head>
+
+<body class="features">
+  <div class="header">
+    <div class="nav ">
+      <div class="container" >
+        <div class="wrapper">
+          <a href="/"><img src="/assets/replay-logo.png"/></a>
+          <div class="links">
+            <a href="/features/perfect-bug-reports.html" class=" link">Features</a>
+            <a href="/about.html" class="active link">About</a>
+            <a href="/contact.html" class="link">Contact </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-description">
+          <h1>Graphics Warning</h1>
+          <div class="secondary">
+            <h2>A warning is shown when painted graphics might not be pixel-perfect.</h2>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <content>
+
+    <div class="features">
+
+      <p>Web Replay works by recording and replaying the browser's interactions with the underlying operating system.  When painting graphics, this includes calls to render text, widgets (checkboxes, etc.), and so forth.  When paused at a JS statement, Web Replay will paint graphics reflecting the DOM/CSS state at that point.  This painting might require calling into the system in different ways from what happened while originally recording.  In such cases Web Replay will attempt to reconstruct the exact graphics which would have been seen at that point, but the result might not be 100% accurate.</p>
+
+      <p>Web Replay's handling of these cases will improve over time.  See these issues <a href="https://github.com/WebReplay/webreplay/issues/50">#50</a> and <a href="https://github.com/WebReplay/webreplay/issues/116">#116</a> for more information.</p>
+
+    </div>
+  </content>
+  <footer></footer>
+</body>
