@@ -52,6 +52,18 @@ Web Replay: Blog
 
     <div class="features">
 
+      <h4>Stress Test Videos <div class="blogdate">April 21, 2020</div></h4>
+
+      <p>Performance work for the beta is mostly done now, and stability is getting better every day.  The videos below show performance for stepping and logpoint stress tests on Facebook, which is a very complex website.</p>
+
+      <p>In this video, Facebook is loaded and the test jumps to five random places on the page, before stepping in 10 random directions at each of them.  Pausing 55 times like this and loading the frames and scopes data in the debugger takes about 40 seconds.</p>
+
+      <iframe width="560" height="400" src="https://www.youtube.com/embed/RyWFNCpvAJw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <p>In this video, Facebook is loaded and 1000 logpoints are added at random places throughout the recording, to evaluate the arguments of whichever function is being called at that point.  Doing these 1000 evaluations and adding the resulting console messages takes about 12 seconds.</p>
+
+      <iframe width="560" height="400" src="https://www.youtube.com/embed/ZZytfVNszHs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
       <h4>Instant Updates <div class="blogdate">April 2, 2020</div></h4>
 
       <p>We've been busy the last month making a bunch of stability and performance improvements to Web Replay.  We want Web Replay to be a joy to use, and for it to work great on complex, real websites before we start beta testing.  This process won't take forever; we're hoping to start beta testing later this April.</p>
