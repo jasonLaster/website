@@ -52,6 +52,16 @@ Web Replay: Blog
 
     <div class="features">
 
+      <h4>Web Replay Protocol <div class="blogdate">May 2, 2020</div></h4>
+
+      <p>We're going to push back the beta for a little while so that we can do some restructuring.  Right now, Web Replay is a monolithic product: a browser which can make recordings, and builtin devtools for replaying and debugging those recordings.  This makes it much harder than it should be for people to build on top of Web Replay.  We want Web Replay to be easy to use for anyone wanting to build new devtools or integrate into their existing devtools.  We were originally planning on adding functionality for this down the road, but after some strong interest lately from people wanting to build on Web Replay, we're pushing those plans up.</p>
+
+      <p>Soon, Web Replay will have three components.  First, the browser will be basically the same as it is now, except that it will use the browser's normal devtools and won't replay recordings.  Second, the Web Replay devtools will be converted to a web app which can be viewed in any browser.  These devtools will be fully open source, and built on top of the third component: the <a href="/protocol/index.html">Web Replay Protocol</a>, a well defined and documented protocol which any tool can use to connect to our servers and inspect recordings.</p>
+
+      <p>The Web Replay Protocol will be modeled after the <a href="https://chromedevtools.github.io/devtools-protocol/">Chrome DevTools Protocol</a>: sending similar JSON-RPC like messages over a websocket, operating at a similar level of abstraction, and using the same methods and structures when appropriate.</p>
+
+      <p>Documentation for the Web Replay Protocol will be expanding rapidly over the next couple of weeks.</p>
+
       <h4>Stress Test Videos <div class="blogdate">April 21, 2020</div></h4>
 
       <p>Performance work for the beta is mostly done now, and stability is getting better every day.  The videos below show performance for stepping and logpoint stress tests on Facebook, which is a very complex website.</p>
