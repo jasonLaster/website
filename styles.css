@@ -1,0 +1,392 @@
+@font-face {
+  font-family: "Camphor";
+  src: url("/fonts/CamphorPro-Regular.ttf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/Metropolis-Light.woff");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/Metropolis-Bold.woff2") format("woff2");
+}
+
+html {
+  font-family: "Camphor";
+  color: rgb(113, 113, 113);
+}
+
+body {
+  margin: 0px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Metropolis;
+  margin: 0;
+  color: #3a3a3a;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: black;
+}
+
+.block {
+  max-width: 900px;
+  align-items: center;
+}
+
+.hflex {
+  display: flex;
+}
+
+.hrflex {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.vflex {
+  flex-direction: column;
+  display: flex;
+}
+
+.background-highlight {
+  background-color: #f8f8f8;
+}
+
+.pane {
+  padding: 2rem 0;
+  justify-content: center;
+}
+
+span.label {
+  background: linear-gradient(
+    180deg,
+    rgba(217, 55, 243, 0.73) 0%,
+    rgba(194, 39, 219, 0.73) 100%
+  );
+  color: white;
+  border-radius: 3px;
+  padding: 1px 4px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.nav {
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 1rem auto;
+}
+
+.nav img {
+  height: 18px;
+}
+.nav .title {
+  align-items: center;
+}
+.nav h1 {
+  margin-left: 0.5rem;
+}
+
+.nav .link {
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+.nav .links {
+  align-items: center;
+}
+
+.nav .links * {
+  margin-left: 1rem;
+}
+
+.cta {
+  background: linear-gradient(152.34deg, #3398ff 25.66%, #007dfd 78.07%);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  line-height: 2.5rem;
+
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.timeline {
+  justify-content: space-evenly;
+  min-width: 360px;
+  margin: 2rem 0;
+}
+
+.hflex.timeline::before {
+  content: "";
+  height: 1px;
+  background-color: #e6e6e6;
+  width: 100%;
+  top: 110px;
+  position: absolute;
+}
+.timeline .marker {
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  position: relative;
+}
+.timeline .marker.selected .tooltip {
+  display: block;
+}
+
+.timeline .marker.selected {
+  box-shadow: 0px 0px 6px 2px #efefef;
+}
+
+.timeline .tooltip {
+  position: absolute;
+  display: none;
+  top: -30px;
+  left: -5px;
+  background-color: #efefef;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 2px 4px;
+  white-space: nowrap;
+}
+.timeline .marker.blue {
+  background: linear-gradient(180deg, #7aa7ff 0%, #3a7dff 100%);
+}
+.timeline .marker.purple {
+  background: linear-gradient(180deg, #fd88ff 0%, #fb34ff 100%);
+}
+.timeline .marker.yellow {
+  background: linear-gradient(180deg, #ffdf8e 0%, #fbc435 100%);
+}
+
+.hero {
+  margin: 2rem auto 6rem;
+}
+
+.hero h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin: 0;
+  color: black;
+  text-align: center;
+}
+
+.hero .description {
+  font-size: 1.25rem;
+  text-align: center;
+  max-width: 41rem;
+  margin: 1rem;
+}
+
+.pane h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.pane .section {
+  max-width: 450px;
+  margin: 0 4rem;
+  justify-content: center;
+}
+
+.pane .image {
+  display: flex;
+  align-items: baseline;
+}
+
+.image.shadow img {
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px 2px #e2e2e2;
+}
+
+.section > p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.section > .description {
+  margin-top: 2rem;
+}
+.section > .description p {
+  margin-top: 0;
+  line-height: 1.5rem;
+}
+
+div:not(.debugging) .section > p {
+  font-style: italic;
+}
+
+.pane .section .bullets {
+  margin-top: 1rem;
+}
+
+.pane .bullet {
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.pane .bullet .content {
+  flex-grow: 1;
+}
+
+.content h4 {
+  font-size: 1.12rem;
+}
+
+.pane .bullet .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  flex-shrink: 0;
+  margin-right: 2rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.debugging {
+  padding: 0;
+  height: 300px;
+  display: none;
+}
+
+.product .icon {
+  background: linear-gradient(180deg, #f5ccff 0%, #f1b7ff 100%);
+}
+
+.engineer .icon {
+  background: linear-gradient(180deg, #ffeec2 0%, #ffe5a0 100%);
+}
+
+.designer .icon {
+  background: linear-gradient(
+    180deg,
+    #ccddff 0%,
+    #acc8ff 100%
+  ); /* background: linear-gradient(180deg, #ffcccc 0%, #ffa3a3 100%); */
+}
+
+.testimonials.pane {
+  padding: 2rem;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+
+.pane.footer {
+  /* background-color: #333; */
+  background: linear-gradient(152.34deg, #3398ff 25.66%, #007dfd 78.07%);
+
+  /* margin: 0; */
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  justify-content: space-around;
+  width: calc(100%);
+  padding: 2rem 0;
+  height: 140px;
+}
+
+.footer h2 {
+  color: #fcfcfc;
+  font-size: 2.5rem;
+}
+
+.cta.secondary {
+  background: white;
+  color: #004b9e;
+}
+
+.debugging-timeline {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 350px;
+}
+
+.debugging-timeline .timeline {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(
+    90deg,
+    #f8f8f8 4.13%,
+    #ffffff 19.93%,
+    #ffffff 52.21%,
+    #ffffff 83.65%,
+    #f8f8f8 100%
+  );
+  width: 31px;
+  min-width: unset;
+  align-items: center;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  padding: 20px 0;
+  margin-left: 60px;
+}
+
+.debugging-timeline .tooltip {
+  position: absolute;
+  left: 100px;
+  top: 10px;
+  background: white;
+  padding: 4px;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+  body {
+    /* background-color: blue; */
+  }
+
+  .pane.hrflex {
+    flex-direction: column;
+  }
+
+  .pane.hflex {
+    flex-direction: column;
+  }
+
+  .pane .image {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .debugging.pane {
+    padding: 2rem 0;
+  }
+  .debugging.pane .image {
+    display: none;
+  }
+}
