@@ -227,16 +227,13 @@ span.label {
   margin: 2rem 0;
 }
 
-.hero-image {
-  margin: 4rem 0 -5rem;
-}
-
 video {
   outline: none;
   border: none;
   box-shadow: 3px 4px 7px 2px #e4e4e4;
   border-radius: 4px;
   max-width: 800px;
+  margin: 4rem auto -5rem;
 }
 
 .pane h3 {
@@ -428,5 +425,12 @@ div:not(.debugging) .section > p {
   }
   .debugging.pane .image {
     display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  video {
+    width: 80%;
+    /* margin: 0 auto; */
   }
 }
