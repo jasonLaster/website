@@ -7,81 +7,88 @@
     <title>Replay</title>
   </head>
   <body>
-    <div class="nav hflex">
-      <div class="title hflex">
-        <img src="assets/logo.svg" />
-        <h1>Replay</h1>
-      </div>
-      <div class="links hflex">
-        <a
-          href="https://www.notion.so/Docs-56758667f53a4d51b7c6fc7a641adb02"
-          class="link"
-          >Docs</a
-        >
-        <!-- <a href="#" role="button" class="button cta">Schedule a demo</a> -->
+    <div class="nav">
+      <div class="hflex">
+        <div class="title hflex">
+          <img src="assets/logo.svg" />
+          <h1>Replay</h1>
+        </div>
+        <div class="links hflex">
+          <a
+            href="https://www.notion.so/Docs-56758667f53a4d51b7c6fc7a641adb02"
+            class="link"
+            >Docs</a
+          >
+          <!-- <a href="#" role="button" class="button cta">Schedule a demo</a> -->
+        </div>
       </div>
     </div>
-    <div class="hero block vflex">
-      <div class="hflex timeline">
-        <div class="marker blue selected">
-          <span style="width: 60px;" class="tooltip">User login</span>
+    <div class="hero">
+      <div class="block vflex">
+        <div class="hflex timeline">
+          <div class="marker blue selected">
+            <span style="width: 60px;" class="tooltip">User login</span>
+          </div>
+          <div class="marker yellow">
+            <span style="width: 70px;" class="tooltip">Slow render</span>
+          </div>
+          <div class="marker blue">
+            <span style="width: 86px;" class="tooltip">
+              Checkout start
+            </span>
+          </div>
+          <div class="marker blue">
+            <span class="tooltip">Product search</span>
+          </div>
+          <div class="marker blue">
+            <span class="tooltip">Cart update</span>
+          </div>
+          <div class="marker purple">
+            <span class="tooltip">Validation error</span>
+          </div>
+          <div class="marker blue">
+            <span class="tooltip">Checkout complete</span>
+          </div>
         </div>
-        <div class="marker yellow">
-          <span style="width: 70px;" class="tooltip">Slow render</span>
+        <h2>
+          See your software in a new light
+        </h2>
+        <div class="description">
+          Replay your application down to a single line of code
         </div>
-        <div class="marker blue">
-          <span style="width: 86px;" class="tooltip">
-            Checkout start
-          </span>
-        </div>
-        <div class="marker blue">
-          <span class="tooltip">Product search</span>
-        </div>
-        <div class="marker blue">
-          <span class="tooltip">Cart update</span>
-        </div>
-        <div class="marker purple">
-          <span class="tooltip">Validation error</span>
-        </div>
-        <div class="marker blue">
-          <span class="tooltip">Checkout complete</span>
+        <a
+          class="typeform-share button cta"
+          href="https://form.typeform.com/to/jAaabLbi"
+          data-mode="drawer_right"
+          data-submit-close-delay="0"
+          target="_blank"
+          >Join the Waitlist
+        </a>
+        <script>
+          (function () {
+            var qs,
+              js,
+              q,
+              s,
+              d = document,
+              gi = d.getElementById,
+              ce = d.createElement,
+              gt = d.getElementsByTagName,
+              id = "typef_orm_share",
+              b = "https://embed.typeform.com/";
+            if (!gi.call(d, id)) {
+              js = ce.call(d, "script");
+              js.id = id;
+              js.src = b + "embed.js";
+              q = gt.call(d, "script")[0];
+              q.parentNode.insertBefore(js, q);
+            }
+          })();
+        </script>
+        <div class="hero-image shadow image">
+          <img src="assets/features-1.gif" />
         </div>
       </div>
-      <h2>
-        See your software in a new light
-      </h2>
-      <div class="description">
-        Replay your application down to a single line of code
-      </div>
-      <a
-        class="typeform-share button cta"
-        href="https://form.typeform.com/to/jAaabLbi"
-        data-mode="drawer_right"
-        data-submit-close-delay="0"
-        target="_blank"
-        >Join the Waitlist
-      </a>
-      <script>
-        (function () {
-          var qs,
-            js,
-            q,
-            s,
-            d = document,
-            gi = d.getElementById,
-            ce = d.createElement,
-            gt = d.getElementsByTagName,
-            id = "typef_orm_share",
-            b = "https://embed.typeform.com/";
-          if (!gi.call(d, id)) {
-            js = ce.call(d, "script");
-            js.id = id;
-            js.src = b + "embed.js";
-            q = gt.call(d, "script")[0];
-            q.parentNode.insertBefore(js, q);
-          }
-        })();
-      </script>
     </div>
     <div class="hflex debugging pane background-highlight">
       <div class="vflex section">
@@ -278,8 +285,8 @@
         </div>
       </div>
 
-      <div class="image shadow">
-        <img width="402px" src="assets/features-1.gif" />
+      <div class="image">
+        <img width="402px" src="assets/engineer.png" />
       </div>
     </div>
 

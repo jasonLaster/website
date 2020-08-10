@@ -88,3 +88,21 @@ function setupDebuggingTimeline() {
 setTimeout(() => {
   setupDebuggingTimeline();
 }, 1000);
+
+let prevOffset;
+window.addEventListener("scroll", function (e) {
+  const offset = window.pageYOffset;
+  const nav = document.querySelector(".nav");
+  const threshold = 20;
+
+  if (prevOffset > threshold && offset > threshold) {
+    return;
+  }
+
+  if (offset > threshold) {
+    nav.classList.add("offset");
+  } else {
+    nav.classList.remove("offset");
+  }
+  prevOffset = offset;
+});
