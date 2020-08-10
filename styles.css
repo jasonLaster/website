@@ -351,6 +351,7 @@ video {
 .footer h2 {
   color: #fcfcfc;
   font-size: 2.5rem;
+  max-width: 80%;
 }
 
 .cta.secondary {
