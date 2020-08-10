@@ -38,7 +38,7 @@
     heroTimelineInterval = setInterval(() => {
       updateHeroTimeline();
       incrementHeroTimelineIndex();
-    }, 4000);
+    }, 1000);
   }
 
   function main() {
@@ -49,7 +49,7 @@
     });
   }
 
-  setTimeout(main, 1000);
+  setTimeout(main, 500);
 })();
 
 function setupDebuggingTimeline() {
@@ -82,7 +82,7 @@ function setupDebuggingTimeline() {
     });
   }
 
-  setInterval(update, 2000);
+  setInterval(update, 1000);
 }
 
 setTimeout(() => {

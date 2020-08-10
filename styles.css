@@ -173,13 +173,17 @@ span.label {
   height: 14px;
   border-radius: 14px;
   position: relative;
+  transition: 200ms;
+  animation-timing-function: ease-in-out;
 }
 .timeline .marker.selected .tooltip {
   display: block;
+  display: none;
 }
 
 .timeline .marker.selected {
-  box-shadow: 0px 0px 6px 2px #efefef;
+  box-shadow: 0px 0px 6px 2px #e2e2e2;
+  transform: scale(1.25);
 }
 
 .timeline .tooltip {
