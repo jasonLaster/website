@@ -81,7 +81,9 @@ h1 {
 
 .pane {
   padding: 4rem 0;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 span.label {
@@ -249,7 +251,6 @@ video {
 
 .pane .section {
   max-width: 500px;
-  margin: 0 4rem;
   justify-content: center;
 }
 
@@ -338,7 +339,7 @@ div:not(.debugging) .section > p {
   display: none;
 }
 
-.pane.footer {
+.footer {
   /* background-color: #333; */
   background: linear-gradient(152.34deg, #3398ff 25.66%, #007dfd 78.07%);
 
@@ -399,7 +400,7 @@ div:not(.debugging) .section > p {
   border-radius: 4px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   body {
     /* background-color: blue !important; */
   }
