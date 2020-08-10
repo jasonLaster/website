@@ -266,6 +266,7 @@ video {
 
 .section > p {
   margin-bottom: 3rem;
+  width: 500px;
 }
 
 .section > .description {
@@ -278,7 +279,7 @@ video {
 
 .pane .bullet {
   align-items: flex-start;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .pane .bullet .content {
@@ -286,7 +287,7 @@ video {
 }
 
 .content h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .pane .bullet .icon {
@@ -296,9 +297,9 @@ video {
   flex-shrink: 0;
   margin-right: 2rem;
   font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  vertical-align: baseline;
+  line-height: 80px;
 }
 
 .debugging {
