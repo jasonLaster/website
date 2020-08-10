@@ -264,9 +264,13 @@ video {
   box-shadow: 2px 2px 10px 2px #e2e2e2;
 }
 
+.pane img {
+  width: 550px;
+}
+
 .section > p {
   margin-bottom: 3rem;
-  width: 500px;
+  max-width: 500px;
 }
 
 .section > .description {
@@ -398,7 +402,8 @@ video {
   }
 
   .pane.hrflex,
-  .pane.hflex {
+  .pane.hflex,
+  .footer.hflex {
     flex-direction: column;
   }
 
@@ -428,5 +433,14 @@ video {
   video {
     width: 80%;
     /* margin: 0 auto; */
+  }
+}
+
+@media (max-width: 600px) {
+  .pane .section {
+    max-width: 90%;
+  }
+  .pane img {
+    width: 80%;
   }
 }
