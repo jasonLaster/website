@@ -44,7 +44,7 @@ h4 {
 
 p {
   line-height: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 h1 {
@@ -228,10 +228,10 @@ span.label {
 }
 
 .hero .description {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: center;
   max-width: 41rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0 2rem 0;
 }
 
 video {
@@ -266,6 +266,8 @@ video {
 
 .section > p {
   margin-bottom: 3rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
 }
 
 .section > .description {
@@ -278,10 +280,6 @@ video {
 
 div:not(.debugging) .section > p {
   font-style: italic;
-}
-
-.pane .section .bullets {
-  /* margin-top: 1rem; */
 }
 
 .pane .bullet {
