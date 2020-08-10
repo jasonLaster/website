@@ -43,7 +43,7 @@ h4 {
 }
 
 p {
-  line-height: 1.5rem;
+  line-height: 1.75rem;
   font-size: 1.125rem;
 }
 
@@ -266,8 +266,6 @@ video {
 
 .section > p {
   margin-bottom: 3rem;
-  font-size: 1.125rem;
-  line-height: 2rem;
 }
 
 .section > .description {
@@ -276,10 +274,6 @@ video {
 .section > .description p {
   margin-top: 0;
   line-height: 1.5rem;
-}
-
-div:not(.debugging) .section > p {
-  font-style: italic;
 }
 
 .pane .bullet {
