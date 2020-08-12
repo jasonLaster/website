@@ -221,10 +221,12 @@ span.label {
 
 .hero h2 {
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin: 0;
   color: black;
   text-align: center;
+  line-height: 4.5rem;
+  max-width: 860px;
 }
 
 .hero .description {
@@ -232,6 +234,7 @@ span.label {
   text-align: center;
   max-width: 41rem;
   margin: 1.5rem 0 2rem 0;
+  line-height: 2.75rem;
 }
 
 video {
