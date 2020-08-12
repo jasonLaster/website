@@ -1,5 +1,8 @@
 @font-face {
-  font-family: "Camphor", sans-serif;
+  font-family: "Camphor", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+
   src: url("/fonts/CamphorPro-Regular.ttf");
 }
 @font-face {
