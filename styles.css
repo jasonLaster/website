@@ -159,6 +159,11 @@ span.label {
   white-space: nowrap;
 }
 
+.nav .cta {
+  line-height: 2rem;
+  margin-left: 2rem;
+}
+
 .timeline {
   justify-content: space-evenly;
   min-width: 360px;
