@@ -346,10 +346,9 @@ video {
   display: none;
 }
 
-.footer {
+.action {
   /* background-color: #333; */
   background: linear-gradient(152.34deg, #3398ff 25.66%, #007dfd 78.07%);
-
   margin-top: 4rem;
   align-items: center;
   text-align: center;
@@ -359,10 +358,26 @@ video {
   height: 240px;
 }
 
-.footer h2 {
+.action h2 {
   color: #fcfcfc;
   font-size: 2.5rem;
   max-width: 80%;
+}
+
+.footer {
+  background: #007dfd;
+  max-width: 100%;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.footer .content {
+  width: 1400px;
+  text-align: right;
+}
+
+.footer a {
+  color: white;
 }
 
 .cta.secondary {
@@ -415,6 +430,7 @@ video {
 
   .pane.hrflex,
   .pane.hflex,
+  .action.hflex,
   .footer.hflex {
     flex-direction: column;
   }
@@ -431,6 +447,11 @@ video {
     flex-direction: row;
     justify-content: center;
     margin: 4rem 0;
+  }
+
+  .footer .content {
+    width: 100%;
+    text-align: center;
   }
 
   .debugging.pane {
