@@ -25,8 +25,7 @@ export default function Hero() {
                 </span>
               </h1>
               <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-2xl">
-                Sharing the perfect bug report is as simple as opening Replay,
-                recording, and sharing the url.
+                As simple as opening Replay, recording, and sharing a link.
               </p>
               <a
                 className="typeform-share mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 sm:w-auto"
@@ -57,10 +56,7 @@ export default function Hero() {
       <div class="bg-gray-800">
         <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <h2 class="text-center text-gray-200 text-lg font-regular tracking-wide md:max-w-4xl max-w-md mx-auto">
-            Replay is a screen recorder for creating recordings{" "}
-            <span class="font-bold">that developers can debug</span>. It
-            includes comments, DOM elements, JavaScript sources and some
-            mind-bendingly useful debugging tools.
+            Replay is a screen recorder for creating recordings that developers can debug. It includes everything you expect from devtools and adds some mind-bendingly useful features designed to save you time. So much precious time.
           </h2>
           <a href="/">
             <h2 class="text-center text-gray-100 text-lg font-bold tracking-wide md:max-w-4xl max-w-md mx-auto underline mt-8">
