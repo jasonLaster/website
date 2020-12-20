@@ -23,7 +23,7 @@ export default function Hero() {
             </svg>
           </div>
         </div>
-    
+
         <div class="relative pt-6 pb-16 sm:pb-24">
           <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <nav class="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
@@ -101,17 +101,20 @@ export default function Hero() {
             <div class="text-center">
               <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span class="block">
-                  <span class="text-indigo-600">Play</span>
+                  <span class="text-blue-500">Play</span>
                   <span> it like a video.</span>
                 </span>
                 <span class="block">
-                  <span class="text-indigo-600">Inspect</span>
+                  <span class="text-blue-500">Inspect</span>
                   <span> it like a website.</span>
                 </span>
               </h1>
               <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-2xl">
               Sharing the perfect bug report is as simple as opening Replay, recording, and sharing the url.
               </p>
+              <a href="#" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 sm:w-auto">
+                Join the wailist
+              </a>
             </div>
           </div>
         </div>
@@ -120,31 +123,22 @@ export default function Hero() {
             <div class="flex-1"></div>
             <div class="flex-1 w-full bg-gray-800"></div>
           </div>
-          <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <img class="relative rounded-lg shadow-lg" src="/screenshot.png" alt="App screenshot" />
           </div>
         </div>
       </div>
       <div class="bg-gray-800">
         <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-          <h2 class="text-center text-gray-400 text-sm font-semibold uppercase tracking-wide">Trusted by over 26,000 forward-thinking companies</h2>
-          <div class="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img class="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
-            </div>
-            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img class="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
-            </div>
-            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img class="h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit" />
-            </div>
-            <div class="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-              <img class="h-12" src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg" alt="Transistor" />
-            </div>
-            <div class="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-              <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg" alt="Workcation" />
-            </div>
-          </div>
+          <h2 class="text-center text-gray-200 text-lg font-regular tracking-wide md:max-w-4xl max-w-md mx-auto">
+          Replay is a screen recorder for creating recordings <span class="font-bold">that developers can debug</span>. It includes comments, DOM elements, JavaScript sources and some mind-bendingly useful debugging tools.
+          </h2>
+          <a href="/">
+            <h2 class="text-center text-gray-100 text-lg font-bold tracking-wide md:max-w-4xl max-w-md mx-auto underline mt-8">
+            Watch the 30 second demo
+            </h2>
+          </a>
+          {/* <h2 class="text-center text-gray-400 text-sm font-semibold uppercase tracking-wide">Replay is a browser recorder</h2> */}
         </div>
       </div>
     </div>
