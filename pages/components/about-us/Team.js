@@ -1,3 +1,21 @@
+function Person({ name, photo, title }) {
+  return (
+    <li>
+      <div className="flex items-center space-x-4 lg:space-x-6">
+        <img
+          className="w-16 h-16 rounded-full lg:w-20 lg:h-20"
+          src={photo}
+          alt=""
+        />
+        <div className="font-medium text-lg leading-6 space-y-1">
+          <h3>{name}</h3>
+          <p className="text-indigo-600">{title}</p>
+        </div>
+      </div>
+    </li>
+  );
+}
+
 export default function Team() {
   return (
     <div className="bg-gray-50	">
@@ -5,103 +23,69 @@ export default function Team() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
           <div className="space-y-5 sm:space-y-4">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Meet our leadership
+              Meet our team
             </h2>
             <p className="text-xl text-gray-500">
-              Libero fames augue nisl porttitor nisi, quis. Id ac elit odio
-              vitae elementum enim vitae ullamcorper suspendisse. Vivamus
-              fringilla.
+              We've worked on Developer Tools, JS Engines, Kubernetes, Babel, VS
+              Code. We're inspired by Bret Victor and{" "}
+              <a href="https://vimeo.com/36579366">Inventing on Principle</a>.
             </p>
           </div>
           <div className="lg:col-span-2">
             <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:gap-x-8">
-              <li>
-                <div className="flex items-center space-x-4 lg:space-x-6">
-                  <img
-                    className="w-16 h-16 rounded-full lg:w-20 lg:h-20"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                  <div className="font-medium text-lg leading-6 space-y-1">
-                    <h3>Leslie Alexander</h3>
-                    <p className="text-indigo-600">Co-Founder / CEO</p>
-                  </div>
-                </div>
-              </li>
+              <Person
+                name="Jason Laster"
+                title="Co-Founder / CEO"
+                photo="/jason.jpeg"
+              ></Person>
 
-              <li>
-                <div className="flex items-center space-x-4 lg:space-x-6">
-                  <img
-                    className="w-16 h-16 rounded-full lg:w-20 lg:h-20"
-                    src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                  <div className="font-medium text-lg leading-6 space-y-1">
-                    <h3>Michael Foster</h3>
-                    <p className="text-indigo-600">Co-Founder / CTO</p>
-                  </div>
-                </div>
-              </li>
+              <Person
+                name="Brian Hackett"
+                title="Co-Founder / CTO"
+                photo="/brian.jpeg"
+              ></Person>
 
-              <li>
-                <div className="flex items-center space-x-4 lg:space-x-6">
-                  <img
-                    className="w-16 h-16 rounded-full lg:w-20 lg:h-20"
-                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                  <div className="font-medium text-lg leading-6 space-y-1">
-                    <h3>Dries Vincent</h3>
-                    <p className="text-indigo-600">
-                      Manager, Business Relations
-                    </p>
-                  </div>
-                </div>
-              </li>
+              <Person
+                name="Logan Smyth"
+                title="Core Debugging lead"
+                photo="/logan.png"
+              ></Person>
 
-              <li>
-                <div className="flex items-center space-x-4 lg:space-x-6">
-                  <img
-                    className="w-16 h-16 rounded-full lg:w-20 lg:h-20"
-                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                  <div className="font-medium text-lg leading-6 space-y-1">
-                    <h3>Lindsay Walton</h3>
-                    <p className="text-indigo-600">Front-end Developer</p>
-                  </div>
-                </div>
-              </li>
+              <Person
+                name="Holger Benl"
+                title="Frontend lead"
+                photo="/holger.png"
+              ></Person>
 
-              <li>
-                <div className="flex items-center space-x-4 lg:space-x-6">
-                  <img
-                    className="w-16 h-16 rounded-full lg:w-20 lg:h-20"
-                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                  <div className="font-medium text-lg leading-6 space-y-1">
-                    <h3>Courtney Henry</h3>
-                    <p className="text-indigo-600">Designer</p>
-                  </div>
-                </div>
-              </li>
+              <Person
+                name="Jaril Valenciano"
+                title="Debugging experience lead"
+                photo="/jaril.png"
+              ></Person>
 
-              <li>
-                <div className="flex items-center space-x-4 lg:space-x-6">
-                  <img
-                    className="w-16 h-16 rounded-full lg:w-20 lg:h-20"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                  <div className="font-medium text-lg leading-6 space-y-1">
-                    <h3>Tom Cook</h3>
-                    <p className="text-indigo-600">
-                      Director, Product Development
-                    </p>
-                  </div>
-                </div>
-              </li>
+              <Person
+                name="Dan Miller"
+                title="Tooling and DX lead"
+                photo="/dan.jpeg"
+              ></Person>
+
+              <Person
+                name="Karina Yeznaian"
+                title="Frontend  lead"
+                photo="/karina.jpeg"
+              ></Person>
+
+              <Person
+                name="Jon Bell"
+                title="Design  lead"
+                photo="/jon.jpeg"
+              ></Person>
+
+              <Person
+                name="Kannan Vijayan"
+                title="Record Replay lead"
+                photo="/kannan.png"
+              ></Person>
             </ul>
           </div>
         </div>
