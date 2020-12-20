@@ -1,17 +1,39 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Hero from "./components/hero";
-import Testimonials from "./components/testimonials";
-import Features from "./components/features";
-import CallToAction from "./components/callToAction";
+import Hero from "./components/Hero";
+import Testimonials from "./components/Testimonials";
+import Features from "./components/Features";
+import CallToAction from "./components/CallToAction";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Replay</title>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: ` (function () {
+            var qs,
+              js,
+              q,
+              s,
+              d = document,
+              gi = d.getElementById,
+              ce = d.createElement,
+              gt = d.getElementsByTagName,
+              id = "typef_orm_share",
+              b = "https://embed.typeform.com/";
+            if (!gi.call(d, id)) {
+              js = ce.call(d, "script");
+              js.id = id;
+              js.src = b + "embed.js";
+              q = gt.call(d, "script")[0];
+              q.parentNode.insertBefore(js, q);
+            }
+          })();`,
+          }}
+        />
       </Head>
       <Hero />
       <Testimonials />
