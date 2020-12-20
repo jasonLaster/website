@@ -8,7 +8,7 @@ export default function Features() {
             Record everything
           </p>
           <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            We've designed recording to work exactly like your favorite screen recorder. Once you click record, Replay captures everything from the browser level so you never miss a thing. Once you're done recording, we upload it and give you a link for you to copy and share instantly.
+            We've designed recording to work as easily as your favorite screen recorder. But Replay also captures everything from the browser level. That means you're not just sending a video, you're sharing context.
           </p>
         </div>
       </div>
@@ -19,7 +19,7 @@ export default function Features() {
             Fix problems faster
           </p>
           <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            All replays are debuggable without having to leave your browser tab. With one click, you can add print statements that auto-magically appear in the console. Add breakpoints that allow you to move backward and forward in time to inspect your app's state.
+            Move backward and forward in time to inspect your app's state. Add print statements that automagically appear in the console. And it's all possible in the browser, using tools you already know and love.
 
           </p>
         </div>
@@ -31,7 +31,7 @@ export default function Features() {
             File bugs effortlessly
           </p>
           <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            The hardest part about fixing bugs is filing them properly in the first place. "Steps to reproduce" are notoriously difficult to write well, and something always gets lost in translation. Replay captures everything you need for the perfect bug report, all in one link.
+            Replay captures everything you need for the perfect bug report, all in one link. Spend less time writing and following steps to reproduce and more time getting real work done.
           </p>
         </div>
       </div>
