@@ -63,7 +63,7 @@ export default function Header() {
           <span class="inline-flex rounded-md shadow">
             <a
               href="/view"
-              class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500"
+              class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-blue-500 bg-white hover:text-indigo-500"
             >
               Log in
             </a>
