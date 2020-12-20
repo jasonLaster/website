@@ -11,6 +11,12 @@ module.exports = {
       },
       colors: {
         rose: colors.rose,
+        fuchsia: colors.fuchsia,
+        orange: colors.orange,
+        cyan: colors.cyan,
+        green: colors.green,
+        purple: colors.purple,
+        ["light-blue"]: colors["light-blue"],
       },
     },
   },
