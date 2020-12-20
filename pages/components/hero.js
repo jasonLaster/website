@@ -83,7 +83,7 @@ export default function Hero() {
                   <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Product</a>
     
                   <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Features</a>
-    
+
                   <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Marketplace</a>
 
                   <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Company</a>
@@ -113,7 +113,7 @@ export default function Hero() {
               Sharing the perfect bug report is as simple as opening Replay, recording, and sharing the url.
               </p>
               <a href="#" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 sm:w-auto">
-                Join the wailist
+                Join the waitlist
               </a>
             </div>
           </div>
@@ -124,7 +124,7 @@ export default function Hero() {
             <div class="flex-1 w-full bg-gray-800"></div>
           </div>
           <div class="max-w-5xl mx-auto px-4 sm:px-6">
-            <img class="relative rounded-lg shadow-lg" src="/screenshot.png" alt="App screenshot" />
+            <img class="relative rounded-lg shadow-2xl" src="/screenshot.png" alt="App screenshot" />
           </div>
         </div>
       </div>
