@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/view", "destination": "https://app.replay.io/view" }
+  ]
+}
