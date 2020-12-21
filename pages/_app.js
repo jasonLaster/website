@@ -23,10 +23,7 @@ function MyApp({ Component, pageProps }) {
           name="twitter:description"
           content="Replay your application down to a single line of code"
         />
-        <meta
-          name="twitter:image"
-          content="http://replay.io/assets/replay.png"
-        />
+        <meta name="twitter:image" content="http://replay.io/debug-view.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           property="og:title"
@@ -37,10 +34,7 @@ function MyApp({ Component, pageProps }) {
           content="Replay: Record and replay web applications"
         />
         <meta property="og:url" content="http://replay.io/" />
-        <meta
-          property="og:image"
-          content="http://replay.io/assets/replay.png"
-        />
+        <meta property="og:image" content="http://replay.io/debug-view.jpg" />
         <meta
           property="og:description"
           content="Replay your application down to a single line of code"

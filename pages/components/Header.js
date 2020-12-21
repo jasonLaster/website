@@ -59,7 +59,7 @@ export default function Header({ toggleDropdown }) {
             Docs
           </Link>
 
-          <Link href="/about-us">About Us</Link>
+          <Link href="/about-us.html">About Us</Link>
         </div>
         {/* <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
           <span className="inline-flex rounded-md shadow">

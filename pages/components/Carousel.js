@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 // import Image from "next/image";
 
-let images = ["/play-view.png", "/debug-view.png"];
+let images = ["/play-view.jpg", "/debug-view.jpg"];
 
 function Circle({ id, selectedImg, setSelectedImg }) {
   const bg = id == selectedImg ? "bg-gray-400" : "bg-gray-700";
