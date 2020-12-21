@@ -27,9 +27,12 @@ export default function Carousel() {
   }, [selectedImg]);
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6">
+    <div
+      className="max-w-5xl mx-auto rounded-lg"
+      style={{ boxShadow: "0px 0px 10px #b0b7bd" }}
+    >
       <Image
-        className="relative rounded-lg shadow-2xl"
+        className="relative rounded-lg"
         src={images[selectedImg]}
         alt="App screenshot"
         width={1035}

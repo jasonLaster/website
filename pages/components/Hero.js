@@ -43,7 +43,7 @@ export default function Hero() {
                 data-submit-close-delay="0"
                 target="_blank"
               >
-                Join Waitlist
+                Join the waitlist
               </a>
             </div>
           </div>
