@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.accent-primary {
+  background: linear-gradient(180deg, #1b7fe3 0%, #5aadff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.accent-secondary {
+  background: linear-gradient(180deg, #8330f4 0%, #a664ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.my-shadow {
+  box-shadow: 10px 5px 5px red;
+}
