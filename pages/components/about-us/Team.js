@@ -26,9 +26,12 @@ export default function Team() {
               Meet our team
             </h2>
             <p className="text-xl text-gray-500">
-              We've worked on Developer Tools, JS Engines, Kubernetes, Babel, VS
-              Code. We're inspired by Bret Victor and{" "}
-              <a href="https://vimeo.com/36579366">Inventing on Principle</a>.
+              We've worked on browser dev tools, JS engines, Kubernetes, Docker,
+              Babel, VS Code.
+            </p>
+            <p className="text-xl text-gray-500">
+              Debugging has not changed since 1972. It's still print statements
+              all the way down.
             </p>
           </div>
           <div className="lg:col-span-2">
@@ -46,45 +49,44 @@ export default function Team() {
               ></Person>
 
               <Person
+                name="Kannan Vijayan"
+                title="Recording + Replaying"
+                photo="/kannan.png"
+              ></Person>
+              <Person
                 name="Logan Smyth"
-                title="Core Debugging lead"
+                title="Debugging lead"
                 photo="/logan.png"
               ></Person>
 
               <Person
-                name="Holger Benl"
-                title="Frontend lead"
-                photo="/holger.png"
-              ></Person>
-
-              <Person
                 name="Jaril Valenciano"
-                title="Debugging experience lead"
+                title="Debugging experience"
                 photo="/jaril.png"
               ></Person>
 
               <Person
-                name="Dan Miller"
-                title="Tooling and DX lead"
-                photo="/dan.jpeg"
+                name="Holger Benl"
+                title="Frontend"
+                photo="/holger.png"
               ></Person>
 
               <Person
                 name="Karina Yeznaian"
-                title="Frontend  lead"
+                title="Frontend"
                 photo="/karina.jpeg"
               ></Person>
 
               <Person
-                name="Jon Bell"
-                title="Design  lead"
-                photo="/jon.jpeg"
+                name="Dan Miller"
+                title="Tooling and DX"
+                photo="/dan.jpeg"
               ></Person>
 
               <Person
-                name="Kannan Vijayan"
-                title="Record Replay lead"
-                photo="/kannan.png"
+                name="Jon Bell"
+                title="Design and UX"
+                photo="/jon.jpeg"
               ></Person>
             </ul>
           </div>

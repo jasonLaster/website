@@ -2,6 +2,7 @@ import BackgroundShapes from "./BackgroundShapes";
 import Header from "./Header";
 import HeaderMenu from "./HeaderMenu";
 import React, { useState } from "react";
+import Carousel from "./Carousel";
 
 export default function Hero() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -50,13 +51,7 @@ export default function Hero() {
             <div class="flex-1"></div>
             <div class="flex-1 w-full bg-gray-800"></div>
           </div>
-          <div class="max-w-5xl mx-auto px-4 sm:px-6">
-            <img
-              class="relative rounded-lg shadow-2xl"
-              src="/screenshot.png"
-              alt="App screenshot"
-            />
-          </div>
+          <Carousel />
         </div>
       </div>
       <div class="bg-gray-800">

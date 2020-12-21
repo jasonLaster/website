@@ -8,9 +8,6 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Replay</title>
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-        <link rel="icon" href="/favicon.svg" />
         <script
           dangerouslySetInnerHTML={{
             __html: ` (function () {
