@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 function Link({ href, children }) {
   return (
@@ -21,7 +21,7 @@ export default function Header({ toggleDropdown }) {
               href="/"
               className="flex items-center justify-between w-full md:w-auto space-x-2"
             >
-              <Image width="28px" height="28px" src="/logo.svg" alt="" />
+              <img width="28px" height="28px" src="/logo.svg" alt="" />
               <h1 className="text-4xl tracking-tight accent-primary hidden md:block md:text-xl">
                 Replay
               </h1>
