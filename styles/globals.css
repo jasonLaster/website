@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.accent-primary
-{
-  color: #1B7FE3;
+.accent-primary {
+  background: linear-gradient(180deg, #1b7fe3 0%, #389cff 38.5%, #076dd4 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.accent-secondary
-{
-  color: #8330F4;
+.accent-secondary {
+  background: linear-gradient(180deg, #8330f4 0%, #b985ff 48.92%, #7b1aff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -19,7 +19,7 @@ export default function Hero() {
                   <span class="accent-primary">Play</span>
                   <span> it like a video.</span>
                 </span>
-                <span class="block">
+                <span class="block mt-2">
                   <span class="accent-secondary">Inspect</span>
                   <span> it like a website.</span>
                 </span>
@@ -54,10 +54,7 @@ export default function Hero() {
         </div>
       </div>
       <div class="bg-gray-800">
-        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-          <h2 class="text-center text-gray-200 text-lg font-regular tracking-wide md:max-w-4xl max-w-md mx-auto">
-            Replay is a screen recorder for creating recordings that developers can debug. It includes everything you expect from devtools and adds some mind-bendingly useful features designed to save you time. So much precious time.
-          </h2>
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:py-24 sm:px-6 lg:px-8">
           <a href="/">
             <h2 class="text-center text-gray-100 text-lg font-bold tracking-wide md:max-w-4xl max-w-md mx-auto underline mt-8">
               Watch the 30 second demo

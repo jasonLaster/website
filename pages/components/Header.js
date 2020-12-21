@@ -1,4 +1,4 @@
-function Link({href, children}) {
+function Link({ href, children }) {
   return (
     <a href={href} class="font-medium text-gray-500 hover:text-gray-900">
       {children}
@@ -21,7 +21,7 @@ export default function Header() {
             >
               <span class="sr-only">Workflow</span>
               <img class="h-5 w-auto sm:h-6" src="/logo.svg" alt="" />
-              <h1 class="text-4xl tracking-tight  text-gray-900 sm:text-3xl md:text-xl">
+              <h1 class="text-4xl tracking-tight accent-primary sm:text-3xl md:text-xl">
                 Replay
               </h1>
             </a>
