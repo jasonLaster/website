@@ -57,7 +57,7 @@ export default function HeaderMenu({ showDropdown, toggleDropdown }) {
               Docs
             </MenuItem>
 
-            <MenuItem href="/about-us.html"> About Us</MenuItem>
+            <MenuItem href="/about-us"> About Us</MenuItem>
           </div>
           {/* <div role="none">
             <a
