@@ -30,8 +30,8 @@ export default function Team() {
               Babel, VS Code.
             </p>
             <p className="text-xl text-gray-500">
-              Debugging has not changed since 1972. It's still print statements
-              all the way down.
+              Debugging has not changed since the 70s. It's still print
+              statements all the way down.
             </p>
           </div>
           <div className="lg:col-span-2">

@@ -8,14 +8,8 @@ import BackgroundShapes from "./components/BackgroundShapes";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Replay</title>
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div class="bg-gray-50">
         <div class="relative overflow-hidden">
-          <BackgroundShapes />
           <BackgroundShapes />
           <Header />
           <Content title="About Replay" subTitle="OUR MISSION">
@@ -25,10 +19,9 @@ export default function Home() {
             </p>
 
             <p className="mt-8 text-xl text-gray-500 leading-8">
-              Recording and replaying software is not a new idea. It is just
-              incredibly difficult to pull off in practice. We started
-              researching “web replay” at Mozilla in 2015 and founded Replay
-              last July.
+              Recording software so that you can replay it later is not a new
+              idea. It is just incredibly difficult. We've been working on it
+              for the past five years and have just recently gotten good at it.
             </p>
 
             <p className="mt-8 text-xl text-gray-500 leading-8">
@@ -36,24 +29,25 @@ export default function Home() {
               When an engineer gets stuck, they share a replay. When a test
               fails, a developer clicks a link to view the replay. When a
               question is asked on Stack Overflow, folks comment directly in the
-              replay. When an issue is filed in Github, an open source
-              maintainer checks out the replay. You see where we’re going with
-              this!
+              replay. When an issue is filed in Github, maintainers help
+              directly in replay. You see where we’re going with this!
             </p>
 
             <p className="mt-8 text-xl text-gray-500 leading-8">
-              We believe recording software at scale, will change the way we
-              understand software. On a simple level, we can show type-hints in
-              the editor and even suggest type improvements. On a more
-              fundamental level, we can begin automating the debugging process
-              by first suggesting hypothesis and eventually suggesting potential
-              fixes.
+              We believe recording software at scale, will change the way
+              software is understood. Recordings let us show type-hints in your
+              editor and even suggest type improvements. Eventually, we can
+              support the debugging process by suggesting hypothesis and
+              eventually potential fixes.
             </p>
 
             <p className="mt-8 text-xl text-gray-500 leading-8">
               If you’re excited to be a part of this journey and think Replay
-              could be a good fit for your team please reach out to{" "}
-              <a href="mailto:hi@replay.io">hi@replay.io</a>.
+              could be a good fit for your team please reach out to us at{" "}
+              <a className="text-purple-500" href="mailto:hi@replay.io">
+                hi@replay.io
+              </a>
+              .
             </p>
           </Content>
           <Team />
