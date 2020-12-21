@@ -8,8 +8,8 @@ import BackgroundShapes from "./components/BackgroundShapes";
 export default function Home() {
   return (
     <>
-      <div class="bg-gray-50">
-        <div class="relative overflow-hidden">
+      <div className="bg-gray-50">
+        <div className="relative overflow-hidden">
           <BackgroundShapes />
           <Header />
           <Content title="About Replay" subTitle="OUR MISSION">
@@ -44,7 +44,7 @@ export default function Home() {
             <p className="mt-8 text-xl text-gray-500 leading-8">
               If you’re excited to be a part of this journey and think Replay
               could be a good fit for your team please reach out to us at{" "}
-              <a className="text-purple-500" href="mailto:hi@replay.io">
+              <a className="text-indigo-600" href="mailto:hi@replay.io">
                 hi@replay.io
               </a>
               .

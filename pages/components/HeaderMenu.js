@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function MenuItem({ children, href }) {
   return (
     <a
@@ -18,7 +20,7 @@ export default function HeaderMenu({ showDropdown, toggleDropdown }) {
       <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
         <div className="px-5 pt-4 flex items-center justify-between">
           <div>
-            <img className="h-5 w-auto sm:h-6" src="/logo.svg" alt="" />
+            <Image width="28px" height="28px" src="/logo.svg" alt="" />
           </div>
           <div className="-mr-2">
             <button

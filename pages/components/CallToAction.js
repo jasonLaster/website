@@ -1,10 +1,12 @@
 export default function CallToAction() {
   return (
     <>
-      <div class="bg-blue-700">
-        <div class="max-w-5xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-          <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-            <span class="block">Ready to say goodbye to bad bug reports?</span>
+      <div className="bg-blue-700">
+        <div className="max-w-5xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+            <span className="block">
+              Ready to say goodbye to bad bug reports?
+            </span>
           </h2>
 
           <a
@@ -19,7 +21,7 @@ export default function CallToAction() {
         </div>
       </div>
       <div className="bg-blue-700" style={{ borderTop: "1px solid #3b82f6" }}>
-        <div class="max-w-5xl mx-auto text-center px-4 py-2 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto text-center px-4 py-2 sm:px-6 lg:px-8">
           <a className="text-blue-200" href="/privacy.html">
             Privacy
           </a>

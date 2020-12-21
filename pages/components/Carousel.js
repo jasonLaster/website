@@ -1,4 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
+import Image from "next/image";
+
 let images = ["/play-view.png", "/debug-view.png"];
 
 function Circle({ id, selectedImg, setSelectedImg }) {
@@ -26,10 +28,12 @@ export default function Carousel() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6">
-      <img
+      <Image
         className="relative rounded-lg shadow-2xl"
         src={images[selectedImg]}
         alt="App screenshot"
+        width={1035}
+        height={685}
       />
       <div className="flex justify-center	py-4">
         <Circle
