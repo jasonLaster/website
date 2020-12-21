@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 let images = ["/play-view.png", "/debug-view.png"];
 
@@ -31,7 +31,7 @@ export default function Carousel() {
       className="max-w-5xl mx-auto rounded-lg"
       style={{ boxShadow: "0px 0px 10px #b0b7bd" }}
     >
-      <Image
+      <img
         className="relative rounded-lg"
         src={images[selectedImg]}
         alt="App screenshot"
