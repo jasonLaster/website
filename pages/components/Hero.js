@@ -1,16 +1,22 @@
 import BackgroundShapes from "./BackgroundShapes";
 import Header from "./Header";
 import HeaderMenu from "./HeaderMenu";
+import React, { useState } from "react";
 
 export default function Hero() {
+  const [showDropdown, setShowDropdown] = useState(false);
+  const toggleDropdown = () => setShowDropdown(!showDropdown);
   return (
     <div class="bg-gray-50">
       <div class="relative overflow-hidden">
         <BackgroundShapes />
 
         <div class="relative  pb-16 sm:pb-24">
-          <Header />
-          <HeaderMenu />
+          <Header toggleDropdown={toggleDropdown} />
+          <HeaderMenu
+            showDropdown={showDropdown}
+            toggleDropdown={toggleDropdown}
+          />
 
           <div class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6">
             <div class="text-center">
@@ -54,13 +60,12 @@ export default function Hero() {
         </div>
       </div>
       <div class="bg-gray-800">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:py-8 sm:px-6 lg:px-8">
           <a href="/">
-            <h2 class="text-center text-gray-100 text-lg font-bold tracking-wide md:max-w-4xl max-w-md mx-auto underline mt-8">
+            <h2 class="text-center text-gray-100 text-lg font-bold tracking-wide md:max-w-4xl max-w-md mx-auto underline">
               Watch the 30 second demo
             </h2>
           </a>
-          {/* <h2 class="text-center text-gray-400 text-sm font-semibold uppercase tracking-wide">Replay is a browser recorder</h2> */}
         </div>
       </div>
     </div>

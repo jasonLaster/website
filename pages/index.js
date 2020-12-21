@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>Replay</title>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
         <script
           dangerouslySetInnerHTML={{
             __html: ` (function () {
