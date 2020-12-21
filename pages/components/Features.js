@@ -59,7 +59,7 @@ export default function Features() {
 
           <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             We've designed recording to work as easily as your favorite screen
-            recorder. But Replay also captures everything from the browser
+            recorder. But Replay also captures everything at the browser
             level. That means you're not just sending a video, you're sharing
             context.
           </p>
@@ -101,8 +101,7 @@ export default function Features() {
           </p>
           <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             Replay captures everything you need for the perfect bug report, all
-            in one link. Spend less time writing and following steps to
-            reproduce and more time getting real work done.
+            in one link. Spend less time reproducing issues and more time getting real work done.
           </p>
         </div>
       </div>
