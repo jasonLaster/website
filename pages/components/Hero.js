@@ -3,15 +3,17 @@ import Header from "./Header";
 import HeaderMenu from "./HeaderMenu";
 import React, { useState } from "react";
 import Carousel from "./Carousel";
+import VideoPlayer from "./VideoPlayer";
 
 export default function Hero() {
   const [showDropdown, setShowDropdown] = useState(false);
   const toggleDropdown = () => setShowDropdown(!showDropdown);
+  const [showVideo, setShowVideo] = useState(false);
   return (
     <div className="bg-gray-50">
       <div className="relative overflow-hidden">
         <BackgroundShapes />
-
+        {showVideo && <VideoPlayer setShowVideo={setShowVideo} />}
         <div className="relative  pb-16 sm:pb-24">
           <Header toggleDropdown={toggleDropdown} />
           <HeaderMenu
@@ -55,11 +57,16 @@ export default function Hero() {
         </div>
       </div>
       <div className="bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:py-8 sm:px-6 lg:px-8">
-          <a href="/">
-            <h2 className="text-center text-gray-300 text-lg font-light tracking-wide md:max-w-4xl max-w-md mx-auto underline">
-              See Replay in action
-            </h2>
+        <div className="max-w-7xl mx-auto px-4 sm:py-8 sm:px-6 lg:px-8 text-center">
+          <a
+            href="#"
+            onClick={(e) => {
+              setShowVideo(true);
+              e.preventDefault();
+            }}
+            className=" text-gray-300 text-lg font-light tracking-wide md:max-w-4xl max-w-md mx-auto underline"
+          >
+            See it in action
           </a>
         </div>
       </div>
