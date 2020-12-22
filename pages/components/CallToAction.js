@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 export default function CallToAction() {
   return (
     <>
@@ -30,6 +31,7 @@ export default function CallToAction() {
         </a> */}
         </div>
       </div>
+      <Footer />
     </>
   );
 }
