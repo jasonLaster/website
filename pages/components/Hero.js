@@ -1,13 +1,10 @@
 import BackgroundShapes from "./BackgroundShapes";
 import Header from "./Header";
-import HeaderMenu from "./HeaderMenu";
 import React, { useState } from "react";
 import Carousel from "./Carousel";
 import VideoPlayer from "./VideoPlayer";
 
 export default function Hero() {
-  const [showDropdown, setShowDropdown] = useState(false);
-  const toggleDropdown = () => setShowDropdown(!showDropdown);
   const [showVideo, setShowVideo] = useState(false);
   return (
     <div className="bg-gray-50">
@@ -15,26 +12,23 @@ export default function Hero() {
         <BackgroundShapes />
         {showVideo && <VideoPlayer setShowVideo={setShowVideo} />}
         <div className="relative  pb-16 sm:pb-24">
-          <Header toggleDropdown={toggleDropdown} />
-          <HeaderMenu
-            showDropdown={showDropdown}
-            toggleDropdown={toggleDropdown}
-          />
+          <Header />
 
           <div className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6">
             <div className="text-center">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block">
                   <span className="accent-primary">Play</span>
-                  <span> it like a video.</span>
+                  <span> like a video.</span>
                 </span>
                 <span className="block mt-2">
                   <span className="accent-secondary">Inspect</span>
-                  <span> it like a website.</span>
+                  <span> like a website.</span>
                 </span>
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-2xl">
-                As simple as opening Replay, recording, and sharing a link.
+                Creating a recording is as simple as opening Replay, clicking
+                record, and sharing a link.
               </p>
               <a
                 className="typeform-share mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 sm:w-auto"
