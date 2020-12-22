@@ -1,7 +1,7 @@
 export default function BackgroundShapes() {
   return (
-    <div className="absolute inset-y-0 h-full w-full" aria-hidden="true">
-      <div className="relative h-full">
+    <div className=" inset-y-0  w-full" aria-hidden="true">
+      <div className="relative ">
         <svg
           className="absolute right-full transform translate-y-1/3 translate-x-1/4 md:translate-y-1/2 sm:translate-x-1/2 lg:translate-x-full"
           width="404"
