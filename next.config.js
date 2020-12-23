@@ -28,8 +28,6 @@ for (const file of files) {
   });
 }
 
-console.log(rewrites);
-
 module.exports = {
   rewrites() {
     return rewrites;
