@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 import React, { useState } from "react";
 
 function Link({ href, children }) {
@@ -30,7 +30,7 @@ function HeaderMenu({ showDropdown, toggleDropdown }) {
       <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
         <div className="px-5 pt-4 flex items-center justify-between">
           <div>
-            <img width="28px" height="28px" src="/logo.svg" alt="" />
+            <Image width="28px" height="28px" src="/logo.svg" alt="" />
           </div>
           <div className="-mr-2">
             <button
@@ -100,7 +100,7 @@ export default function Header() {
                 href="/"
                 className="flex items-center justify-between w-full md:w-auto space-x-2"
               >
-                <img width="28px" height="28px" src="/logo.svg" alt="" />
+                <Image width="28px" height="28px" src="/logo.svg" alt="" />
                 <h1 className="text-4xl tracking-tight accent-primary hidden md:block md:text-xl">
                   Replay
                 </h1>

@@ -1,10 +1,14 @@
+import Image from "next/image";
+
 function Person({ name, photo, title }) {
   return (
     <li>
       <div className="flex items-center space-x-4 lg:space-x-6">
-        <img
+        <Image
           className="w-16 h-16 rounded-full lg:w-20 lg:h-20"
           src={photo}
+          width="60px"
+          height="60px"
           alt=""
         />
         <div className="font-medium text-lg leading-6 space-y-1">
