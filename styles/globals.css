@@ -32,3 +32,9 @@ body,
 .testimonial:hover figure {
   transform: rotate(0deg) translateZ(0px) !important;
 }
+
+@media (min-width: 768px) {
+  .md\:w-xl {
+    width: 36rem;
+  }
+}

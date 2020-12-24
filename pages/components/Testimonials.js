@@ -86,14 +86,6 @@ function Testimonial({ name, title, avatar, body, offset, index }) {
   }, []);
 
   const { primaryColor, gradient, lightColor } = colors[index % colors.length];
-  let figureWidth = "550px";
-  if (typeof window === "object") {
-    if (window.outerWidth < 420) {
-      figureWidth = "240px";
-    } else if (window.outerWidth < 800) {
-      figureWidth = "350px";
-    }
-  }
 
   return (
     <li
@@ -102,7 +94,7 @@ function Testimonial({ name, title, avatar, body, offset, index }) {
     >
       <figure
         className="shadow-lg rounded-xl flex-none w-80 md:w-xl"
-        style={{ width: figureWidth, transform: rotation }}
+        style={{ transform: rotation }}
       >
         <blockquote className="rounded-t-xl bg-white px-6 py-8 md:p-10 text-lg md:text-xl leading-8 md:leading-8 font-semibold text-gray-900">
           <svg
