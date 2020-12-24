@@ -128,6 +128,35 @@ function Testimonial({ name, title, avatar, body, offset, index }) {
   );
 }
 
+function OurStatement() {
+  return (
+    <section className="relative z-10 text-center max-w-screen-lg xl:max-w-screen-xl mx-auto">
+      <div className="flex flex-col items-center py-12 px-4 sm:px-6 md:px-8 justify-center">
+        <h2 className="my-12 text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-gray-700 tracking-tight mb-8">
+          Debugging shouldn't hurt
+        </h2>
+        <p className="max-w-4xl text-gray-500 text-lg sm:text-2xl font-medium sm:leading-10 space-y-6 max-w-4xl mx-auto mb-6">
+          I’ve seen too many friends burn out, spent too many hours stuck, and
+          applied way too many “band-aids”. Replay is our attempt to re-imagine
+          what debugging should feel like.
+        </p>
+        <div className="flex-none w-14 h-14 bg-white rounded-full flex items-center justify-center">
+          <img
+            src={"/jason.jpeg"}
+            alt=""
+            className="w-12 h-12 rounded-full bg-orange-100"
+            loading="lazy"
+          />
+        </div>
+        <figcaption className="sm:text-xl font-medium flex flex-col items-center">
+          <div className="text-gray-700">Jason Laster</div>
+          <div className="text-indigo-500"> Co-Founder of Replay</div>
+        </figcaption>
+      </div>
+    </section>
+  );
+}
+
 export default function Testimonials() {
   const [offset, setOffset] = useState(0);
 
@@ -140,23 +169,31 @@ export default function Testimonials() {
   }, [offset]);
 
   return (
-    <div className="relative testimonials py-20">
+    <>
       <div
-        className="absolute  bg-gray-50 pointer-events-none top-0"
-        style={{ width: "100%", height: "40%" }}
-      ></div>
-      <div className="flex overflow-hidden -my-8">
-        <ul className="flex items-center w-full py-8">
-          {[
-            ...testimonials,
-            ...testimonials,
-            ...testimonials,
-            ...testimonials,
-          ].map((testionial, i) => (
-            <Testimonial {...testionial} offset={offset} key={i} index={i} />
-          ))}
-        </ul>
+        className="bg-gray-50 pointer-events-none "
+        style={{ width: "100%" }}
+      >
+        <OurStatement />
       </div>
-    </div>
+      <div className="relative testimonials ">
+        <div
+          className="absolute  bg-gray-50 pointer-events-none top-0"
+          style={{ width: "100%", height: "40%" }}
+        ></div>
+        <div className="flex overflow-hidden ">
+          <ul className="flex items-center w-full py-8">
+            {[
+              ...testimonials,
+              ...testimonials,
+              ...testimonials,
+              ...testimonials,
+            ].map((testionial, i) => (
+              <Testimonial {...testionial} offset={offset} key={i} index={i} />
+            ))}
+          </ul>
+        </div>
+      </div>
+    </>
   );
 }
