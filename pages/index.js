@@ -33,7 +33,7 @@ export default function Home() {
         />
       </Head>
       <Hero />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <Features />
       <CallToAction />
     </>
