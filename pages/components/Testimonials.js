@@ -15,6 +15,15 @@ const testimonials = [
     body:
       "Replay is going to be amazing for library maintainers. We'll no longer need to ask for repro instructions with bug reports– we can just ask for the recording.",
   },
+
+  {
+    name: "Gleb Bahmutov",
+    title: "Cypress Distinguised Engineer",
+    avatar: "/gleb.png",
+    body:
+      "Debugging intermittent tests in Replay will be a game changer. The debugger feels like hopping into Doc Brown’s DeLorean!",
+  },
+
   {
     name: "Harald K.",
     title: "Product Manager at VS Code	",
