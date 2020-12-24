@@ -1,10 +1,8 @@
 export default function Footer() {
   return (
     <div
-      className="bg-blue-700"
-      style={{
-        borderTop: "1px solid #3b82f6",
-      }}
+      className="bg-blue-700 flex-shrink-0"
+      style={{ borderTop: "1px solid #3b82f6" }}
     >
       <div className="max-w-5xl mx-auto text-center px-4 py-2 sm:px-6 lg:px-8">
         <a className="text-blue-200" href="/privacy.html">
