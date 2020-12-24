@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-// import Image from "next/image";
+import Image from "next/image";
 
 let images = ["/play-view.jpg", "/debug-view.jpg"];
 
@@ -19,7 +19,7 @@ export default function Carousel() {
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       setSelectedImg((selectedImg + 1) % 2);
-    }, 15000);
+    }, 10000);
 
     return () => {
       clearInterval(intervalRef.current);
@@ -31,7 +31,7 @@ export default function Carousel() {
       className="max-w-5xl mx-auto rounded-lg"
       style={{ boxShadow: "0px 0px 10px #b0b7bd" }}
     >
-      <img
+      <Image
         className="relative rounded-lg"
         src={images[selectedImg]}
         alt="App screenshot"
