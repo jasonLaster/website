@@ -71,12 +71,14 @@ const colors = [
 function Testimonial({ name, title, avatar, body, offset, index }) {
   const [rotation, setRotation] = useState();
   useEffect(() => {
-    const num = (6 + Math.random(10)) / 10;
+    const num = (10 + Math.random(20)) / 10;
     const dir = Math.random() > 0.5 ? "-" : "";
     setRotation(`rotate(${dir}${num}deg) translateZ(0px)`);
   }, []);
 
   const { primaryColor, gradient, lightColor } = colors[index % colors.length];
+  const figureWidth =
+    typeof window === "object" && window.outerWidth < 800 ? "300px" : "550px";
 
   return (
     <li
@@ -86,7 +88,7 @@ function Testimonial({ name, title, avatar, body, offset, index }) {
     >
       <figure
         className="shadow-lg rounded-xl flex-none w-80 md:w-xl"
-        style={{ width: "550px", transform: rotation }}
+        style={{ width: figureWidth, transform: rotation }}
 
         // style="transform: "
       >
@@ -127,7 +129,7 @@ export default function Testimonials() {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setOffset(offset < -3000 ? 0 : offset - 0.7);
+      setOffset(offset < -3000 ? 0 : offset - 0.4);
     }, 20);
 
     return () => clearTimeout(timeout);
