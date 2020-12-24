@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  height: 100%;
+}
+
+body,
+#__next {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .accent-primary {
   background: linear-gradient(180deg, #1b7fe3 0%, #5aadff 100%);
   background-clip: text;

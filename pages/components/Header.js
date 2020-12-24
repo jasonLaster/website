@@ -89,12 +89,12 @@ export default function Header() {
   const toggleDropdown = () => setShowDropdown(!showDropdown);
   return (
     <>
-      <div className="max-w-7xl pt-6 mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl flex pt-6 mx-auto px-4 sm:px-6 container">
         <nav
-          className="relative flex items-center justify-between sm:h-10 md:justify-center"
+          className="relative flex flex-l flex-grow justify-center sm:h-10"
           aria-label="Global"
         >
-          <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
+          <div className="flex items-center  md:absolute md:left-0">
             <div className="flex items-center justify-between w-full md:w-auto">
               <a
                 href="/"
@@ -105,7 +105,7 @@ export default function Header() {
                   Replay
                 </h1>
               </a>
-              <div className="-mr-2 flex items-center md:hidden">
+              <div className="-mr-2 flex items-center md:hidden absolute right-0">
                 <button
                   type="button"
                   className="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
