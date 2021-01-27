@@ -76,12 +76,6 @@ export default function Team() {
               ></Person>
 
               <Person
-                name="Karina Yeznaian"
-                title="Frontend"
-                photo="/karina.jpeg"
-              ></Person>
-
-              <Person
                 name="Dan Miller"
                 title="Tooling and DX"
                 photo="/dan.jpeg"
