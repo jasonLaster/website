@@ -47,7 +47,7 @@ export default function Hero() {
             <div className="flex-1"></div>
             <div className="flex-1 w-full bg-gray-800"></div>
           </div>
-          <Carousel />
+          <Carousel setShowVideo={setShowVideo} />
         </div>
       </div>
       <div className="bg-gray-800">

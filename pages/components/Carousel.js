@@ -13,7 +13,7 @@ function Circle({ id, selectedImg, setSelectedImg }) {
   );
 }
 
-export default function Carousel() {
+export default function Carousel({ setShowVideo }) {
   const [selectedImg, setSelectedImg] = useState(0);
   let intervalRef = useRef();
   useEffect(() => {
@@ -28,8 +28,12 @@ export default function Carousel() {
 
   return (
     <div
-      className="max-w-5xl mx-auto rounded-lg"
-      style={{ boxShadow: "0px 0px 10px #b0b7bd" }}
+      className="max-w-5xl mx-auto rounded-lg "
+      style={{ boxShadow: "0px 0px 10px #b0b7bd", cursor: "pointer" }}
+      onClick={(e) => {
+        setShowVideo(true);
+        e.preventDefault();
+      }}
     >
       <Image
         className="relative rounded-lg"
