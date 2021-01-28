@@ -30,10 +30,6 @@ export default function Carousel({ setShowVideo }) {
     <div
       className="max-w-5xl mx-auto rounded-lg "
       style={{ boxShadow: "0px 0px 10px #b0b7bd", cursor: "pointer" }}
-      onClick={(e) => {
-        setShowVideo(true);
-        e.preventDefault();
-      }}
     >
       <Image
         className="relative rounded-lg"
@@ -41,6 +37,10 @@ export default function Carousel({ setShowVideo }) {
         alt="App screenshot"
         width={1035}
         height={685}
+        onClick={(e) => {
+          setShowVideo(true);
+          e.preventDefault();
+        }}
       />
       <div className="flex justify-center	py-4">
         <Circle
