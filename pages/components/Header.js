@@ -69,15 +69,6 @@ function HeaderMenu({ showDropdown, toggleDropdown }) {
 
             <MenuItem href="/about-us"> About Us</MenuItem>
           </div>
-          {/* <div role="none">
-            <a
-              href="/view"
-              className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700"
-              role="menuitem"
-            >
-              Log in
-            </a>
-          </div> */}
         </div>
       </div>
     </div>
