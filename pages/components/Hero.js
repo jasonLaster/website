@@ -18,20 +18,27 @@ export default function Hero() {
             <div className="text-center">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block">
-                  <span className="accent-primary">Play</span>
-                  <span> it like a video.</span>
+                  <span className="text-pink-500">Record</span>
+                  <span> your app</span>
                 </span>
-                <span className="block mt-2">
-                  <span className="accent-secondary">Inspect</span>
-                  <span> it like a website.</span>
+                <span className="block mt-5">
+                  <span className="text-purple-500 ">Discuss</span>
+                  <span> the video</span>
+                </span>
+                <span className="block mt-5">
+                  <span className="text-indigo-500">Inspect</span>
+                  <span> the code</span>
                 </span>
               </h1>
-              <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-2xl">
-                Creating a recording is as simple as opening Replay, clicking
-                record, and sharing a link.
+
+              <p className="my-12 max-w-lg mx-auto text-base text-gray-500 sm:text-lg  md:text-xl md:max-w-3xl">
+                Stop wasting time reproducing the problem. With Replay, you can
+                go from the video to the code and fix the problem in a fraction
+                of the time.
               </p>
+
               <a
-                className="typeform-share mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 sm:w-auto"
+                className="typeform-share w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 sm:w-auto"
                 href="https://form.typeform.com/to/jAaabLbi"
                 data-mode="drawer_right"
                 data-submit-close-delay="0"
