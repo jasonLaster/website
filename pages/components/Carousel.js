@@ -36,7 +36,7 @@ export default function Carousel({ setShowVideo }) {
         src={images[selectedImg]}
         alt="App screenshot"
         width={1035}
-        height={685}
+        height={571}
         onClick={(e) => {
           setShowVideo(true);
           e.preventDefault();
