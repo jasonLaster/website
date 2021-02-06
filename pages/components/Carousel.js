@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 
-let images = ["/play-view.jpg", "/debug-view.jpg"];
+let images = ["/play-view.jpg", "/debug-view.jpg", "/inspect-view.jpg"];
 
 function Circle({ id, selectedImg, setSelectedImg }) {
   const bg = id == selectedImg ? "bg-gray-400" : "bg-gray-700";
@@ -18,7 +18,7 @@ export default function Carousel({ setShowVideo }) {
   let intervalRef = useRef();
   useEffect(() => {
     intervalRef.current = setInterval(() => {
-      setSelectedImg((selectedImg + 1) % 2);
+      setSelectedImg((selectedImg + 1) % 3);
     }, 10000);
 
     return () => {
@@ -50,6 +50,11 @@ export default function Carousel({ setShowVideo }) {
         />
         <Circle
           id={1}
+          selectedImg={selectedImg}
+          setSelectedImg={setSelectedImg}
+        />
+        <Circle
+          id={2}
           selectedImg={selectedImg}
           setSelectedImg={setSelectedImg}
         />
