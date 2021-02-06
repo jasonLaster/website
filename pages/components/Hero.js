@@ -31,10 +31,10 @@ export default function Hero() {
                 </span>
               </h1>
 
-              <p className="my-12 max-w-lg mx-auto text-base text-gray-500 sm:text-lg  md:text-xl md:max-w-3xl">
+              <p className="my-12 max-w-lg mx-auto text-base text-gray-700 sm:text-lg  md:text-xl md:max-w-3xl">
                 Replay lets you record your application so that everyone on the
-                team can discuss the video and inspect the code. Bugs that would
-                otherwise take days to fix are now squashed in minutes.
+                team can discuss the video and inspect the code. It's silly how
+                much time you'll save!
               </p>
 
               <a
