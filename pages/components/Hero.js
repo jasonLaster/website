@@ -32,9 +32,9 @@ export default function Hero() {
               </h1>
 
               <p className="my-12 max-w-lg mx-auto text-base text-gray-500 sm:text-lg  md:text-xl md:max-w-3xl">
-                Stop wasting time reproducing the problem. With Replay, you can
-                go from the video to the code and fix the problem in a fraction
-                of the time.
+                Replay lets you record your application so that everyone on the
+                team can discuss the video and inspect the code. Bugs that would
+                otherwise take days to fix are now squashed in minutes.
               </p>
 
               <a
