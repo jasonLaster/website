@@ -26,7 +26,7 @@ export default function Download() {
 
               <div className="inline-flex rounded-md shadow">
                 <a
-                  href="/linux-replay.tar.bz2"
+                  href="/downloads/linux-replay.tar.bz2"
                   className="inline-flex items-center font-bold justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
                 >
                   Download Replay for Linux
