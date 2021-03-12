@@ -10,7 +10,7 @@ export default function VideoPlayer({ setShowVideo }) {
       <iframe
         width={`${width}px`}
         height={`${height}px`}
-        src="https://www.youtube.com/embed/CXLcLxi2s5U?controls=0"
+        src="https://www.youtube.com/embed/Qkxt4enr-9w?controls=0"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
