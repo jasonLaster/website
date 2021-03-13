@@ -9,6 +9,10 @@ rewrites.push({
   destination: `https://dc3tvimjwmdjm.cloudfront.net/protocol/tot/:domain/`,
 });
 
+rewrites.push({
+  source: "/discord",
+  destination: "https://discord.gg/PFjtU3uv7M",
+});
 
 for (const directory of directories) {
   headers.push({
@@ -21,8 +25,6 @@ for (const directory of directories) {
     destination: `https://dc3tvimjwmdjm.cloudfront.net/${directory}/:rest*`,
   });
 }
-
-
 
 for (const file of files) {
   headers.push({
