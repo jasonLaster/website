@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function Person({ name, photo, title }) {
+function Person({ name, photo, title, htmlTitle }) {
   return (
     <li>
       <div className="flex items-center space-x-4 lg:space-x-6">
@@ -11,7 +11,7 @@ function Person({ name, photo, title }) {
           height="60px"
           alt=""
         />
-        <div className="font-medium text-lg leading-6 space-y-1">
+        <div className="font-medium text-lg leading-6 space-y-1" title={`Internal Title: ${htmlTitle}`}>
           <h3>{name}</h3>
           <p className="text-indigo-600">{title}</p>
         </div>
@@ -44,47 +44,55 @@ export default function Team() {
                 name="Jason Laster"
                 title="Co-Founder / CEO"
                 photo="/jason.jpeg"
+                htmlTitle="Chief Executive Officer"
               ></Person>
 
               <Person
                 name="Brian Hackett"
                 title="Co-Founder / CTO"
                 photo="/brian.jpeg"
+                htmlTitle="Chief Technology Officer"
               ></Person>
 
               <Person
                 name="Kannan Vijayan"
                 title="Recording + Replaying"
                 photo="/kannan.png"
+                htmlTitle="Software Engineer"
               ></Person>
               <Person
                 name="Logan Smyth"
                 title="Debugging lead"
                 photo="/logan.png"
+                htmlTitle="Software Engineer"
               ></Person>
 
               <Person
                 name="Jaril Valenciano"
                 title="Debugging experience"
                 photo="/jaril.png"
+                htmlTitle="Management Consultant"
               ></Person>
 
               <Person
                 name="Holger Benl"
                 title="Frontend"
                 photo="/holger.png"
+                htmlTitle="Software Engineer"
               ></Person>
 
               <Person
                 name="Dan Miller"
                 title="Tooling and DX"
                 photo="/dan.jpeg"
+                htmlTitle="Software Engineer"
               ></Person>
 
               <Person
                 name="Jon Bell"
                 title="Design and UX"
                 photo="/jon.jpeg"
+                htmlTitle="Product Designer"
               ></Person>
             </ul>
           </div>
