@@ -14,14 +14,15 @@ export default function Download() {
           <h2 className="text-3xl">👋</h2>
 
           <p className="mt-4  text-center text-gray-500">
-            Replay is currently in closed beta, <br /> so please do not download Replay unless you have been invited.
+            Replay is currently in closed beta, <br /> so please do not download
+            Replay unless you have been invited.
           </p>
           <div className="mt-12 flex justify-center">
             <div class="flex space-x-5">
               <div className="inline-flex rounded-md shadow">
                 <a
                   href="/downloads/replay.dmg"
-                  className="inline-flex items-center font-bold justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                  className="inline-flex items-center font-bold justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700"
                 >
                   Download Replay for Mac
                 </a>
@@ -30,7 +31,7 @@ export default function Download() {
               <div className="inline-flex rounded-md shadow">
                 <a
                   href="/downloads/linux-replay.tar.bz2"
-                  className="inline-flex items-center font-bold justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                  className="inline-flex items-center font-bold justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700"
                 >
                   Download Replay for Linux
                 </a>
