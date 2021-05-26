@@ -26,3 +26,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Tailwind
 
 We're using [Tailwind](http://tailwindcss.com/) for styling the landing page and the core components [Tailwind UI](https://tailwindui.com).
+
+
