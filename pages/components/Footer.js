@@ -1,19 +1,32 @@
 const navigation = {
   company: [
-    { name: "About", href: "#" },
-    { name: "Philosophy", href: "#" },
-    { name: "Privacy Policy", href: "#" }
+    {
+      name: "About",
+      href: "https://replay.io/about-us"
+    },
+    { name: "Privacy Policy", href: "https://replay.io/privacy.html" }
   ],
   product: [
-    { name: "Technology", href: "#" },
-    { name: "Docs", href: "#" },
-    { name: "Use Cases", href: "#" }
+    {
+      name: "Technology",
+      href:
+        "https://www.notion.so/replayio/Technology-cc65abf5eb11443586abb4aa04345985"
+    },
+    {
+      name: "Docs",
+      href: "https://www.notion.so/Docs-56758667f53a4d51b7c6fc7a641adb02"
+    },
+    {
+      name: "Use Cases",
+      href:
+        "https://www.notion.so/replayio/Use-Cases-e64fea3c289e40998a0646c8530d3fe4#5325bd872731431bae8a3aff1e5c536e"
+    }
   ],
   contact: [
-    { name: "hey@replay.io", href: "#" },
-    { name: "Discord", href: "#" },
-    { name: "Twitter", href: "#" },
-    { name: "Github", href: "#" }
+    { name: "hey@replay.io", href: "mailto:hey@replay.io" },
+    { name: "Discord", href: "https://replay.io/discord" },
+    { name: "Twitter", href: "https://twitter.com/replayio" },
+    { name: "Github", href: "https://github.com/RecordReplay" }
   ],
   social: [
     {
@@ -47,7 +60,7 @@ export default function Footer() {
       <h2 id="footerHeading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div className="max-w-7xl mx-auto pb-16 px-4 sm:px-6 lg:pb-8 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
@@ -105,37 +118,6 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="mt-8 xl:mt-0">
-            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-              Subscribe to our newsletter
-            </h3>
-            <p className="mt-4 text-base text-gray-500">
-              The latest news, articles, and resources, sent to your inbox
-              weekly.
-            </p>
-            <form className="mt-4 sm:flex sm:max-w-md">
-              <label htmlFor="emailAddress" className="sr-only">
-                Email address
-              </label>
-              <input
-                type="email"
-                name="emailAddress"
-                id="emailAddress"
-                autoComplete="email"
-                required
-                className="appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400"
-                placeholder="Enter your email"
-              />
-              <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 flex items-center justify-center border border-transparent rounded-md py-2 px-4 text-base font-medium text-white hover:bg-blue-700 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
           </div>
         </div>
         <div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">

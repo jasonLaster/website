@@ -36,7 +36,8 @@ const testimonials = [
     name: "Desigan Chinniah",
     title: "Former Director of Platform Relations at Firefox",
     avatar: "/dees.jpeg",
-    body: "After a decade of working on browser engines and web standards. I can confidently say that Replay will change the way teams engineer their code and collaborate across the entire organization."
+    body:
+      "After a decade of working on browser engines and web standards. I can confidently say that Replay will change the way teams engineer their code and collaborate across the entire organization."
   }
 ];
 

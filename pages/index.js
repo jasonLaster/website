@@ -5,7 +5,6 @@ import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
-
 export default function Home() {
   return (
     <>
@@ -34,10 +33,10 @@ export default function Home() {
           }}
         />
       </Head>
-      <div className="space-y-24">
+      <div className="space-y-8">
         <div className="bg-gray-50">
-        <Header />
-        <Hero />
+          <Header />
+          <Hero />
         </div>
         <Features />
         <Testimonials />
