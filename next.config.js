@@ -1,52 +1,41 @@
-const devToolsHost =
-  process.env.REPLAY_DEVTOOLS_HOST || "https://dc3tvimjwmdjm.cloudfront.net";
 const directories = ["dist", "images", "downloads", "driver", "protocol"];
-const files = ["view", "browser"];
+const files = ["view"];
 
 const rewrites = [];
 const headers = [];
 
 rewrites.push({
   source: `/protocol/tot/:domain`,
-  destination: `${devToolsHost}/protocol/tot/:domain/`
+  destination: `https://dc3tvimjwmdjm.cloudfront.net/protocol/tot/:domain/`,
 });
 
 rewrites.push({
   source: "/discord",
-  destination: "https://discord.gg/PFjtU3uv7M"
+  destination: "https://discord.gg/PFjtU3uv7M",
 });
 
 for (const directory of directories) {
   headers.push({
     source: `/${directory}/:rest*`,
-    headers: [{ key: "cache-control", value: "s-maxage=1" }]
+    headers: [{ key: "cache-control", value: "s-maxage=1" }],
   });
 
   rewrites.push({
     source: `/${directory}/:rest*`,
-    destination: `${devToolsHost}/${directory}/:rest*`
+    destination: `https://dc3tvimjwmdjm.cloudfront.net/${directory}/:rest*`,
   });
 }
 
 for (const file of files) {
   headers.push({
     source: `/${file}`,
-    headers: [{ key: "cache-control", value: "s-maxage=0" }]
+    headers: [{ key: "cache-control", value: "s-maxage=0" }],
   });
 
   rewrites.push({
-    source: `/${file}/:rest*`,
-    destination: `${devToolsHost}/${file}/:rest*`
+    source: `/${file}`,
+    destination: `https://dc3tvimjwmdjm.cloudfront.net/${file}`,
   });
-
-  // rewrite root directories when requested within child paths of each $file
-  // /view/recordings/123-456-789/images/logo.svg => /images/logo.svg
-  for (const directory of directories) {
-    rewrites.push({
-      source: `/${file}/:path*/${directory}/:rest*`,
-      destination: `${devToolsHost}/${directory}/:rest*`
-    });
-  }
 }
 
 module.exports = {
@@ -55,5 +44,5 @@ module.exports = {
   },
   headers() {
     return headers;
-  }
+  },
 };
