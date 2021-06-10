@@ -97,11 +97,11 @@ export default function Hero() {
             </div>
             <div className="relative px-4 sm:px-6 lg:px-8">
               <h1 className="text-center text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-                <span className="block text-gray-900">
+                <span className="block text-gray-900 font-bold">
                   Capture bugs, not video
                 </span>
               </h1>
-              <p className="mt-2 max-w-lg mx-auto text-center text-xl text-gray-500 sm:max-w-3xl my-8">
+              <p className="mt-2 max-w-lg mx-auto text-center text-xl text-gray-500 sm:max-w-3xl my-8 font-light">
                 Replay is a browser that records websites so your team can fix
                 bugs faster.
               </p>
@@ -109,6 +109,57 @@ export default function Hero() {
           </div>
         </div>
         <Video />
+        <Intro />
+      </div>
+    </div>
+  );
+}
+
+function Intro() {
+  return (
+    <div className="bg-gray-100 p-16">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+        <div className="lg:gap-24 text-center">
+          <div>
+            <h2 className="text-center text-2xl font-bold tracking-tight sm:text-3xl lg:text-5xl text-gray-900">
+              Stop reproducing bugs
+            </h2>
+          </div>
+          <div className="mt-0 lg:col-span-2">
+            <dl className="space-y-12">
+              <div>
+                <dd className="my-6 px-16 text-xl w-xl font-light text-gray-600 text-gray-900">
+                  <p>
+                    Discussing and reproducing bugs is time-consuming and
+                    frustrating. When you record with Replay, we capture
+                    everything in one place so your team can fix it as soon as
+                    possible.
+                  </p>
+                  <p className="mt-4">
+                    We've worked on Replay for five years and we'd love to hear
+                    what you think!
+                  </p>
+                </dd>
+                <figcaption className="sm:text-xl font-medium flex flex-col items-center">
+                  <div className="p-1 border-2 border-light-blue-400 rounded-full mb-3">
+                    <img
+                      src="/jason.jpeg"
+                      alt=""
+                      className="w-10 h-10 rounded-full bg-light-blue-100"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="text-gray-900">
+                    <a href="mailto:jason@replay.io">Jason Laster</a>
+                  </div>
+                  <div className="text-gray-500 font-light">
+                    Co-founder, Replay
+                  </div>
+                </figcaption>
+              </div>
+            </dl>
+          </div>
+        </div>
       </div>
     </div>
   );

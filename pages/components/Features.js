@@ -20,7 +20,9 @@ function Feature({ title, content, type, picture }) {
     <div>
       <dt className={`text-xl leading-6 ${headerColor}`}>{title}</dt>
 
-      <dd className={`mt-6 text-lg font-light text-gray-600 ${bodyColor}`}>
+      <dd
+        className={`mt-6 px-28 text-lg w-xl font-light text-gray-600 ${bodyColor}`}
+      >
         {content}
       </dd>
 
@@ -97,16 +99,7 @@ export default function Features() {
   return (
     <main className="bg-white space-y-16" style={{ paddingTop: "300px" }}>
       {/* <SubHeader /> */}
-      <div className="bg-gray-100 py-16">
-        <FeatureGroup type="light" title="Why Replay?">
-          <Feature
-            type="light"
-            title={``}
-            content={`Discussing and reproducing bugs is time consuming and frustrating. Replay records the bug so your team can debug it directly.`}
-          />
-        </FeatureGroup>
-      </div>
-      <div className=" my-32 ">
+      <div className="my-0 ">
         <FeatureGroup title="Capture the whole session">
           <Feature
             title={``}
@@ -115,20 +108,20 @@ export default function Features() {
           />
         </FeatureGroup>
       </div>
-      <div className=" my-32 ">
+      <div className="py-6">
         <FeatureGroup title="Collaborate in context">
           <Feature
             title={``}
-            content={`You can add a comment in the video, an event, or even a line of code. Share with your team using a simple link and get on the same page.`}
+            content={`With Replay, you can add a comment in the video, an event, or even a line of code. Then you can share with your team using a simple link to get everyone on the same page.`}
             picture={"/viewing.png"}
           />
         </FeatureGroup>
       </div>
-      <div className=" my-32 ">
+      <div className="pt-6 pb-24">
         <FeatureGroup title="Fix difficult bugs faster">
           <Feature
             title={``}
-            content={`You can add print statements and immediately see the messages in the console without having to refresh and replicate your steps. Find the issue, fix it, and move on.`}
+            content={`Replay lets you add print statements and immediately see the messages in the console without having to refresh and replicate your steps. Find the issue, fix it, and move on.`}
             picture={"/devtools.png"}
           />
         </FeatureGroup>
