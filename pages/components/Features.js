@@ -36,11 +36,9 @@ function FeatureGroup({ title, children, type }) {
     <div className="max-w-3xl mx-auto px-4 sm:px-6">
       <div className="lg:gap-24 text-center">
         <div>
-          <h2 className={`text-3xl lg:text-3xl font-extrabold ${headerColor}`}>
-            {title}
-          </h2>
+          <h2 className={`text-3xl font-extrabold ${headerColor}`}>{title}</h2>
         </div>
-        <div className="mt-12 lg:mt-0 lg:col-span-2">
+        <div className="mt-2 lg:col-span-2">
           <dl className="space-y-12">{children}</dl>
         </div>
       </div>
@@ -107,7 +105,7 @@ export default function Features() {
           <Feature
             title={``}
             content={`Replay is the first runtime recorder. This means when you view a replay, you won’t need to reproduce a thing. We’ve got it all captured, so we can replay the session as it really happened.`}
-            picture={"https://replay.io/screenshot.png"}
+            picture={"/recording.png"}
           />
         </FeatureGroup>
       </div>
@@ -116,7 +114,7 @@ export default function Features() {
           <Feature
             title={``}
             content={`You can add a comment on a place in the video, a point in time, a browser event, or even a line of code. Share with your team using a simple link that works in any browser so you can get on the same page.`}
-            picture={"https://replay.io/screenshot.png"}
+            picture={"/viewing.png"}
           />
         </FeatureGroup>
       </div>
@@ -125,7 +123,7 @@ export default function Features() {
           <Feature
             title={``}
             content={`Because Replay is a time-travelling debugger, you can add print statements to any point in time without having to refresh and replicate your steps. Find the issue, fix it, and move on.`}
-            picture={"https://replay.io/screenshot.png"}
+            picture={"/devtools.png"}
           />
         </FeatureGroup>
       </div>
