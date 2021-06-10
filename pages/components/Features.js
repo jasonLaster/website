@@ -20,9 +20,7 @@ function Feature({ title, content, type, picture }) {
     <div>
       <dt className={`text-xl leading-6 ${headerColor}`}>{title}</dt>
 
-      <dd
-        className={`mt-6 px-28 text-lg w-xl font-light text-gray-600 ${bodyColor}`}
-      >
+      <dd className="my-6 px-2 sm:px-4 md:px-16 lg:px-16 text-xl w-xl font-light ${bodyColor}">
         {content}
       </dd>
 
@@ -97,9 +95,9 @@ function FeatureQuote({ name, position, picture, style, content }) {
 
 export default function Features() {
   return (
-    <main className="bg-white space-y-16" style={{ paddingTop: "300px" }}>
+    <main className="bg-white space-y-16" style={{ paddingTop: "360px" }}>
       {/* <SubHeader /> */}
-      <div className="my-0 ">
+      <div className="my-0 sm:my-12">
         <FeatureGroup title="Capture the whole session">
           <Feature
             title={``}
@@ -108,7 +106,7 @@ export default function Features() {
           />
         </FeatureGroup>
       </div>
-      <div className="py-6">
+      <div className="py-6 sm:py-4">
         <FeatureGroup title="Collaborate in context">
           <Feature
             title={``}
@@ -117,7 +115,7 @@ export default function Features() {
           />
         </FeatureGroup>
       </div>
-      <div className="pt-6 pb-24">
+      <div className="pt-6 pb-24 sm:py-4">
         <FeatureGroup title="Fix difficult bugs faster">
           <Feature
             title={``}

@@ -117,7 +117,7 @@ export default function Hero() {
 
 function Intro() {
   return (
-    <div className="bg-gray-100 p-16">
+    <div className="bg-gray-100 p-6 sm:py-6 md:p-16 lg:p-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="lg:gap-24 text-center">
           <div>
@@ -128,7 +128,7 @@ function Intro() {
           <div className="mt-0 lg:col-span-2">
             <dl className="space-y-12">
               <div>
-                <dd className="my-6 px-16 text-xl w-xl font-light text-gray-600 text-gray-900">
+                <dd className="my-6 px-2 sm:px-4 md:px-16 lg:px-16 text-xl w-xl font-light text-gray-900">
                   <p>
                     Discussing and reproducing bugs is time-consuming and
                     frustrating. When you record with Replay, we capture
