@@ -119,7 +119,7 @@ export default function Features() {
         <FeatureGroup title="Debug with DevTools">
           <Feature
             title={``}
-            content={`With replay, you can view network events, inspect elements, and even add print statements after the fact. It's all there so you can find the bugs faster.`}
+            content={`With Replay, you can view console logs, inspect elements, and even add print statements after the fact. It's all there so you can find the bugs faster.`}
             picture={"/devtools.png"}
           />
         </FeatureGroup>
