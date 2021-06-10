@@ -102,7 +102,7 @@ export default function Features() {
           <Feature
             type="light"
             title={``}
-            content={`The first step to understanding an issue is seeing it. Today teams use a blend of screenshots, screen recordings, and difficult-to-follow repro steps (if there are repro steps at all!) that take way too much time. We think there’s a better way to understand and fix bugs, so we built Replay.`}
+            content={`Discussing and reproducing bugs is time consuming and frustrating. Replay records the bug so your team can debug it directly.`}
           />
         </FeatureGroup>
       </div>
@@ -110,16 +110,16 @@ export default function Features() {
         <FeatureGroup title="Capture the whole session">
           <Feature
             title={``}
-            content={`Replay is the first runtime recorder. This means when you view a replay, you won’t need to reproduce a thing. We’ve got it all captured, so we can replay the session as it really happened.`}
+            content={`Replay records the browser. This means when you view a replay, you won't need to reproduce a thing. We’ve got it all captured, so you can see what really happened.`}
             picture={"/recording.png"}
           />
         </FeatureGroup>
       </div>
       <div className=" my-32 ">
-        <FeatureGroup title="Collaborate on everything">
+        <FeatureGroup title="Collaborate in context">
           <Feature
             title={``}
-            content={`You can add a comment on a place in the video, a point in time, a browser event, or even a line of code. Share with your team using a simple link that works in any browser so you can get on the same page.`}
+            content={`You can add a comment in the video, an event, or even a line of code. Share with your team using a simple link and get on the same page.`}
             picture={"/viewing.png"}
           />
         </FeatureGroup>
@@ -128,7 +128,7 @@ export default function Features() {
         <FeatureGroup title="Fix difficult bugs faster">
           <Feature
             title={``}
-            content={`Because Replay is a time-travelling debugger, you can add print statements to any point in time without having to refresh and replicate your steps. Find the issue, fix it, and move on.`}
+            content={`You can add print statements and immediately see the messages in the console without having to refresh and replicate your steps. Find the issue, fix it, and move on.`}
             picture={"/devtools.png"}
           />
         </FeatureGroup>
