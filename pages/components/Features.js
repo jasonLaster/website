@@ -35,7 +35,7 @@ function FeatureGroup({ title, children, type }) {
   const headerColor = type == "dark" ? "text-white" : "text-gray-900";
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6">
       <div className="lg:gap-24 text-center">
         <div>
           <h2
