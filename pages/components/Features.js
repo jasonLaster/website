@@ -116,10 +116,10 @@ export default function Features() {
         </FeatureGroup>
       </div>
       <div className="pt-6 pb-24 sm:py-4">
-        <FeatureGroup title="Fix difficult bugs faster">
+        <FeatureGroup title="Debug with DevTools">
           <Feature
             title={``}
-            content={`Replay lets you add print statements and immediately see the messages in the console without having to refresh and replicate your steps. Find the issue, fix it, and move on.`}
+            content={`With Replay, you can view console logs, inspect elements, and even add print statements after the fact. It's all there so you can find the bugs faster.`}
             picture={"/devtools.png"}
           />
         </FeatureGroup>
