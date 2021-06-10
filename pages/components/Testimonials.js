@@ -1,5 +1,19 @@
 const testimonials = [
   {
+    name: "Brian Vaughn",
+    title: "React Maintainer",
+    avatar: "/brianv.jpg",
+    body:
+      "Replay is going to be amazing for library maintainers. We'll no longer need to ask for repro instructions with bug reports – we can just ask for the recording."
+  },
+  {
+    name: "Gleb Bahmutov",
+    title: "Cypress Distinguished Engineer",
+    avatar: "/gleb.png",
+    body:
+      "Debugging intermittent tests in Replay will be a game changer. The debugger feels like hopping into Doc Brown’s DeLorean!"
+  },
+  {
     name: "Kyle Matthews",
     title: "Founder/CEO, Gatsby",
     avatar: "/kyle.jpg",
@@ -24,20 +38,6 @@ const testimonials = [
     title: "Developer Products, Stripe",
     avatar: "/kenneth.jpeg",
     body: `Replay is a true game-changer that enables every developer to do time-travel debugging.<br /><br /> Their work is the most significant leap forward for (web) debugging since we introduced the step debugger.`
-  },
-  {
-    name: "Geoffrey Litt",
-    title: "PhD, programming tools",
-    avatar: "/geoffrey.jpg",
-    body:
-      "Using Replay feels like living in the future. The ability to quickly find all the places that a print statement triggered and move between them is so useful for understanding what's happening.	"
-  },
-  {
-    name: "Desigan Chinniah",
-    title: "Former Director of Platform Relations at Firefox",
-    avatar: "/dees.jpeg",
-    body:
-      "After a decade of working on browser engines and web standards. I can confidently say that Replay will change the way teams engineer their code and collaborate across the entire organization."
   }
 ];
 
@@ -82,7 +82,7 @@ function Testimonial({ testimonial }) {
 export default function Testimonials() {
   return (
     <>
-      <section className="bg-blue-500 my-32" style={{marginTop:"64px"}}>
+      <section className="bg-blue-500 my-32" style={{ marginTop: "64px" }}>
         <div className="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
           {testimonials.map((testimonial) => (
             <Testimonial testimonial={testimonial} />
