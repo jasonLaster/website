@@ -20,9 +20,11 @@ function Feature({ title, content, type, picture }) {
     <div>
       <dt className={`text-xl leading-6 ${headerColor}`}>{title}</dt>
 
-      <dd className={`mt-6 text-xl font-light ${bodyColor}`}>{content}</dd>
+      <dd className={`mt-6 text-lg font-light text-gray-600 ${bodyColor}`}>
+        {content}
+      </dd>
 
-      <div class="flex-shrink-0 inline-flex rounded-full mt-4">
+      <div class="flex-shrink-0 inline-flex rounded-full mt-8">
         <img class="h-full w-full shadow-lg rounded-md" src={picture} alt="" />
       </div>
     </div>
@@ -36,9 +38,13 @@ function FeatureGroup({ title, children, type }) {
     <div className="max-w-3xl mx-auto px-4 sm:px-6">
       <div className="lg:gap-24 text-center">
         <div>
-          <h2 className={`text-3xl font-extrabold ${headerColor}`}>{title}</h2>
+          <h2
+            className={`text-center text-2xl font-extrabold tracking-tight sm:text-3xl lg:text-5xl ${headerColor}`}
+          >
+            {title}
+          </h2>
         </div>
-        <div className="mt-2 lg:col-span-2">
+        <div className="mt-0 lg:col-span-2">
           <dl className="space-y-12">{children}</dl>
         </div>
       </div>

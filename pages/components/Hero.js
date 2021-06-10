@@ -96,12 +96,12 @@ export default function Hero() {
               ></div>
             </div>
             <div className="relative px-4 sm:px-6 lg:px-8">
-              <h1 className="text-center text-2xl font-extrabold tracking-tight sm:text-3xl lg:text-5xl">
+              <h1 className="text-center text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
                 <span className="block text-gray-900">
                   Capture bugs, not video
                 </span>
               </h1>
-              <p className="mt-6 max-w-lg mx-auto text-center text-xl text-gray-500 sm:max-w-3xl my-8">
+              <p className="mt-2 max-w-lg mx-auto text-center text-xl text-gray-500 sm:max-w-3xl my-8">
                 Replay is a browser that records websites so your team can fix
                 bugs faster.
               </p>

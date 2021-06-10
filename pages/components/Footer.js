@@ -1,7 +1,7 @@
 const navigation = {
   company: [
     {
-      name: "About",
+      name: "About Us",
       href: "https://replay.io/about-us"
     },
     { name: "Privacy Policy", href: "https://replay.io/privacy.html" }
