@@ -95,7 +95,7 @@ export default function Hero() {
                 style={{ "mix-blend-mode": "multiply;" }}
               ></div>
             </div>
-            <div className="relative px-4 sm:px-6 lg:px-8">
+            <div className="relative px-4 sm:px-6 lg:px-8 flex-col">
               <h1 className="text-center text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
                 <span className="block text-gray-900 font-bold">
                   Debuggable bug reports
@@ -105,6 +105,19 @@ export default function Hero() {
                 Replay is a browser that records all of the context you need to
                 fix bugs faster.
               </p>
+              {/* <div className="relative px-4 sm:px-6 lg:px-8"> */}
+              <div className="flex  justify-center">
+                <a
+                  className="inline-flex typeform-share text-center whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
+                  href="https://form.typeform.com/to/jAaabLbi"
+                  data-mode="drawer_right"
+                  data-submit-close-delay="0"
+                  target="_blank"
+                >
+                  Join our beta list
+                </a>
+              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>
