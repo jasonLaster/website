@@ -2,7 +2,7 @@ const host =
   process.env.REPLAY_DEVTOOLS_HOST || "https://dc3tvimjwmdjm.cloudfront.net";
 const directories = ["dist", "images", "downloads", "driver", "protocol"];
 
-let maintenance = false
+let maintenance = false;
 
 const devToolsAppPath = "view";
 const files = [devToolsAppPath];
@@ -74,6 +74,15 @@ for (const devToolsPath of devToolsPaths) {
 module.exports = {
   rewrites() {
     return rewrites;
+  },
+  redirects() {
+    return [
+      {
+        source: "/view/:slug*",
+        destination: "https://app.replay.io/:slug*", // Matched parameters can be used in the destination
+        permanent: true
+      }
+    ];
   },
   headers() {
     return headers;
